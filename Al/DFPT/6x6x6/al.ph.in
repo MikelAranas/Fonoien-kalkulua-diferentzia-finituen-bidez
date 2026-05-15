@@ -1,0 +1,12 @@
+Al
+&inputph
+  tr2_ph   =  1.0d-12
+  prefix   = 'al'
+  amass(1) =  26.9815
+  outdir   = './tmp'
+  fildyn   = 'al.dyn'
+  ldisp    = .true.
+  nq1      = 6
+  nq2      = 6
+  nq3      = 6
+/

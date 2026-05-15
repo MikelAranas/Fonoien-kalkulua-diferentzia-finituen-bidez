@@ -1,0 +1,11 @@
+&INPUT
+  asr              = 'simple'
+  flfrc            = 'graphene.fc'
+  flfrq            = 'graphene.freq'
+  q_in_band_form   = .true.
+/
+4
+  0.000000   0.000000  0.0  50   ! G
+  0.000000  -0.577588  0.0  50   ! M
+ -0.333471  -0.577588  0.0  50   ! K
+  0.000000   0.000000  0.0  1    ! G

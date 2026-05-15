@@ -1,0 +1,12 @@
+Phonon graphene
+&INPUTPH
+  prefix       = 'graphene'
+  outdir       = './tmp'
+  tr2_ph       = 1.0d-14
+  ldisp        = .true.
+  nq1          = 7
+  nq2          = 7
+  nq3          = 1
+  fildyn       = 'graphene.dyn'
+  lqdir        = .true.
+/

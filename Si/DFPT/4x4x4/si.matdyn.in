@@ -1,0 +1,10 @@
+ &input
+    asr='crystal', amass(1) = 28.086, 
+    flfrc='si.fc', flfrq='si.freq',q_in_band_form=.true., q_in_cryst_coord = .true.
+ /
+ 5
+ 0.75  0.50  0.25   21
+ 0.50  0.50  0.00   60
+ 0.0   0.0   0.0    51
+ 0.50  0.50  0.50   9
+ 0.75  0.375 0.375  1

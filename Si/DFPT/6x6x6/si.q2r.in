@@ -1,0 +1,6 @@
+&input
+  zasr = 'crystal',
+  fildyn = 'si.dyn',
+  flfrc = 'si.fc',
+/
+

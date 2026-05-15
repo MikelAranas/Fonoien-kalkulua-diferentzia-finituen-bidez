@@ -1,0 +1,100 @@
+
+     Program Q2R v.7.4 starts on 14May2026 at 12:46:10 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    12 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      12
+     153691 MiB available memory on the printing compute node when the environment starts
+ 
+
+  reading grid info from file graphene.dyn0    
+
+  reading force constants from file graphene.dyn1
+  Dielectric Tensor not found
+  nqs=            1
+ q=   0.00000000  0.00000000  0.00000000
+  reading force constants from file graphene.dyn2
+  nqs=            6
+ q=   0.00000000  0.16495722  0.00000000
+ q=  -0.14285714  0.08247861  0.00000000
+ q=   0.14285714  0.08247861  0.00000000
+ q=  -0.14285714 -0.08247861  0.00000000
+ q=   0.14285714 -0.08247861  0.00000000
+ q=   0.00000000 -0.16495722  0.00000000
+  reading force constants from file graphene.dyn3
+  nqs=            6
+ q=   0.00000000  0.32991444  0.00000000
+ q=  -0.28571429  0.16495722  0.00000000
+ q=   0.28571429  0.16495722  0.00000000
+ q=  -0.28571429 -0.16495722  0.00000000
+ q=   0.28571429 -0.16495722  0.00000000
+ q=   0.00000000 -0.32991444  0.00000000
+  reading force constants from file graphene.dyn4
+  nqs=            6
+ q=   0.00000000  0.49487166  0.00000000
+ q=  -0.42857143  0.24743583  0.00000000
+ q=   0.42857143  0.24743583  0.00000000
+ q=  -0.42857143 -0.24743583  0.00000000
+ q=   0.42857143 -0.24743583  0.00000000
+ q=   0.00000000 -0.49487166  0.00000000
+  reading force constants from file graphene.dyn5
+  nqs=            6
+ q=   0.14285714  0.24743583  0.00000000
+ q=  -0.14285714  0.24743583  0.00000000
+ q=   0.28571429  0.00000000  0.00000000
+ q=  -0.28571429  0.00000000  0.00000000
+ q=   0.14285714 -0.24743583  0.00000000
+ q=  -0.14285714 -0.24743583  0.00000000
+  reading force constants from file graphene.dyn6
+  nqs=           12
+ q=   0.14285714  0.41239305  0.00000000
+ q=   0.28571429  0.32991444  0.00000000
+ q=  -0.28571429  0.32991444  0.00000000
+ q=   0.42857143  0.08247861  0.00000000
+ q=  -0.42857143 -0.08247861  0.00000000
+ q=   0.28571429 -0.32991444  0.00000000
+ q=  -0.28571429 -0.32991444  0.00000000
+ q=   0.42857143 -0.08247861  0.00000000
+ q=  -0.42857143  0.08247861  0.00000000
+ q=  -0.14285714  0.41239305  0.00000000
+ q=  -0.14285714 -0.41239305  0.00000000
+ q=   0.14285714 -0.41239305  0.00000000
+  reading force constants from file graphene.dyn7
+  nqs=            6
+ q=   0.14285714  0.57735027  0.00000000
+ q=  -0.42857143  0.41239305  0.00000000
+ q=   0.57142857  0.16495722  0.00000000
+ q=  -0.57142857 -0.16495722  0.00000000
+ q=   0.42857143 -0.41239305  0.00000000
+ q=  -0.14285714  0.57735027  0.00000000
+  reading force constants from file graphene.dyn8
+  nqs=            6
+ q=   0.28571429  0.49487166  0.00000000
+ q=  -0.28571429  0.49487166  0.00000000
+ q=   0.57142857  0.00000000  0.00000000
+ q=  -0.57142857  0.00000000  0.00000000
+ q=   0.28571429 -0.49487166  0.00000000
+ q=  -0.28571429 -0.49487166  0.00000000
+
+      q-space grid ok, #points =   49
+
+      fft-check success (sum of imaginary terms < 10^-12)
+ 
+     Q2R          :      0.01s CPU      0.01s WALL
+
+ 
+   This run was terminated on:  12:46:10  14May2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
