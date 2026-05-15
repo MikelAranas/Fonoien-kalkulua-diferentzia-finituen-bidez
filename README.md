@@ -1,4 +1,4 @@
-# Fonoien Kalkuluak Diferentzia Finituak Erabiliz
+# Fonoien kalkulua diferentzia finituen bidez
 
 Gradu Amaierako Lana — Fisikako Gradua (UPV/EHU)
 
@@ -27,4 +27,3 @@ TFG/
     └── escalado_tiempos.pdf
 ```
 
-# Fonoien-kalkulua-diferentzia-finituen-bidez
