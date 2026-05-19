@@ -39,13 +39,13 @@ sympoints=[G,X,K,G2,L]
 fig, ax = plt.subplots(figsize=(8*(1+np.sqrt(5)/2),10*1))
 # Plot phonon bands
 for i in range(1,len(freq)):
-    ax.plot(freq[0], freq[i]/33.3564, color='blue')
+    ax.plot(freq[0], freq[i], color='blue')
 # Set maximum energy of plot
-wmax = np.max(freq/33.3564)
+wmax = np.max(freq)
 ytop = wmax + 2.0
 
 # Set minimum energy of plot
-wmin = np.min(freq/33.3564)
+wmin = np.min(freq)
 ybot = wmin - 0.01
 # If negative modes, highlight region
 if (wmin < 0.0):
