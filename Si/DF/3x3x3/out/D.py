@@ -32,14 +32,14 @@ b2 = np.array([ 0.707107,  0.707107,  0.707107])
 b3 = np.array([-0.707107,  0.707107, -0.707107])
 B = np.vstack([b1, b2, b3])
 
-factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302 * 33.3564
+factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302 #* 33.3564
 
 symmetry_points = [
-    (r'$W$',   np.array([0.75,   0.50,  0.25 ])),
+    (r'$\Gamma$',   np.array([0.0,   0.0,  0.0 ])),
     (r'$X$',   np.array([0.50,   0.50,  0.00 ])),
-    (r'$\Gamma$', np.array([0.00,   0.00,  0.00 ])),
-    (r'$L$',   np.array([0.50,   0.50,  0.50 ])),
-    (r'$K$',   np.array([0.75,   0.375, 0.375])),
+    (r'$K$', np.array([0.375,   0.625,  0.00 ])),
+    (r'$\Gamma*$',   np.array([0.0,   1.0,  0.0 ])),
+    (r'$L$',   np.array([0.0,   1.5, 0.0])),
 ]
 
 
@@ -211,7 +211,7 @@ for s_tick in tick_positions:
     ax.axvline(s_tick, color='0.7', ls=':', lw=0.8)
 ax.set_xlim(s_path[0], s_path[-1])
 ax.set_ylim(bottom=0)
-ax.set_ylabel(r'$\omega$ (cm$^{-1}$)')
+ax.set_ylabel(r'$\omega$ (THz)')
 ax.set_xticks(tick_positions)
 ax.set_xticklabels(tick_labels)
 plt.tight_layout()

@@ -15,11 +15,11 @@ b3 = np.array([-0.707107,  0.707107, -0.707107])
 B = np.vstack([b1, b2, b3])
 
 sym_pts = [
-    (r'$W$',      np.array([0.750, 0.500, 0.250])),
-    (r'$X$',      np.array([0.500, 0.500, 0.000])),
-    (r'$\Gamma$', np.array([0.000, 0.000, 0.000])),
-    (r'$L$',      np.array([0.500, 0.500, 0.500])),
-    (r'$K$',      np.array([0.750, 0.375, 0.375])),
+    (r'$\Gamma$',   np.array([0.0,   0.0,  0.0 ])),
+    (r'$X$',   np.array([0.50,   0.50,  0.00 ])),
+    (r'$K$', np.array([0.375,   0.625,  0.00 ])),
+    (r'$\Gamma*$',   np.array([0.0,   1.0,  0.0 ])),
+    (r'$L$',   np.array([0.0,   1.5, 0.0])),
 ]
 
 def s_at_q(q_path, s_path, q_target):
@@ -45,7 +45,7 @@ for i in range(1, len(q_path_ref)):
 
 sym_s      = [s_at_q(q_path_ref, s_ref_path, qpt) for _, qpt in sym_pts]
 sym_labels = [label for label, _ in sym_pts]
-fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+fig, axes = plt.subplots(2, 2, figsize=(18, 14), constrained_layout=True)
 axes = axes.flatten()
 
 for ax, size in zip(axes, sizes):
@@ -85,7 +85,7 @@ for ax, size in zip(axes, sizes):
     ymax = all_freqs.max() * 1.05
 
     ax.set_xlim(s_dfpt[0], s_dfpt[-1])
-    ax.set_ylim(-5, ymax)
+    ax.set_ylim(0.0, ymax)
     ax.set_title(f'{size}', fontsize=13)
     ax.tick_params(axis='x', which='both', bottom=False, labelbottom=False)
     ax.tick_params(axis='y', labelsize=11)
@@ -94,7 +94,6 @@ for ax, size in zip(axes, sizes):
     ax.legend(fontsize=10)
 
 fig.suptitle('DF (puntos) vs DFPT (líneas) — Si', fontsize=14)
-plt.tight_layout()
 plt.savefig('DF_vs_DFPT_per_size.pdf', bbox_inches='tight')
 print("Gordeta: DF_vs_DFPT_per_size.pdf")
 

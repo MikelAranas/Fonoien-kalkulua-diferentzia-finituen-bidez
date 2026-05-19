@@ -1,5 +1,5 @@
 
-     Program MATDYN v.7.4 starts on  1May2026 at 12:45:49 
+     Program MATDYN v.7.4 starts on 19May2026 at 19:42:39 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,17 +14,17 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =      12
-     93617 MiB available memory on the printing compute node when the environment starts
+     167240 MiB available memory on the printing compute node when the environment starts
  
  Norm of the difference between old and new effective charges:    0.00000000000000000000
 
  Norm of the difference between old and new force-constants:   0.00002853666676198041
 
  
-     MATDYN       :      0.02s CPU      0.02s WALL
+     MATDYN       :      0.03s CPU      0.04s WALL
 
  
-   This run was terminated on:  12:45:49   1May2026            
+   This run was terminated on:  19:42:39  19May2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

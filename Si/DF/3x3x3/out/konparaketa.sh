@@ -7,7 +7,7 @@ set output "DF_VS_DFPT_Si.pdf"
 
 set title "DF vs DFPT (Si)"
 set xlabel "q"
-set ylabel "w(q) (cm^{-1})"
+set ylabel "w(q) (THz)"
 
 set key top right
 

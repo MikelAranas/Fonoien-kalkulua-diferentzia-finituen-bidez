@@ -49,19 +49,20 @@ n_basis  = 2
 n_branch = 3 * n_basis  # 6 ramas
 
 symmetry_points = [
-    (r'$W$',   np.array([0.75,   0.50,  0.25 ])),
+    (r'$\Gamma$',   np.array([0.0,   0.0,  0.0 ])),
     (r'$X$',   np.array([0.50,   0.50,  0.00 ])),
-    (r'$\Gamma$', np.array([0.00,   0.00,  0.00 ])),
-    (r'$L$',   np.array([0.50,   0.50,  0.50 ])),
-    (r'$K$',   np.array([0.75,   0.375, 0.375])),
+    (r'$K$', np.array([0.375,   0.625,  0.00 ])),
+    (r'$\Gamma*$',   np.array([0.0,   1.0,  0.0 ])),
+    (r'$L$',   np.array([0.0,   1.5, 0.0])),
 ]
+# Γ–X–K–Γ*–L
 
 q_path_file = 'path.dat'
 IFC_file    = 'IFC_murriztue.dat'
 output_plot = 'Si_DF_bandak.pdf'
 output_dat  = 'Si_DF_bandak.dat'
 
-factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302* 33.3564
+factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302#* 33.3564
 
 # ═════════════════════════════════════════════════════════════════
 #  CARGA Y DIAGNOSTICO DE IFC
@@ -174,34 +175,6 @@ def phonon_frequencies(D):
     w2[w2 < 0] = 0.0
     return np.sqrt(w2) * factor
 
-# ── Diagnóstico en Gamma ─────────────────────────────────────────
-print("\n" + "=" * 60)
-print("DIAGNOSTICO D(q) EN GAMMA q=[0,0,0]")
-print("=" * 60)
-D_gamma = dynamical_matrix(np.array([0.0, 0.0, 0.0]), B)
-print("  Parte real:")
-print("  " + str(np.round(D_gamma.real, 6)).replace("\n", "\n  "))
-print(f"  Norma parte imaginaria (debe ser ~0): {np.linalg.norm(D_gamma.imag):.2e}")
-freqs_gamma = phonon_frequencies(D_gamma)
-print(f"  Frecuencias en Gamma (cm⁻¹): {np.round(freqs_gamma, 4)}")
-print(f"  (Esperado: 3 modos acusticos ~0, 3 opticos ~520 cm⁻¹)")
-
-# ── Diagnóstico en X ─────────────────────────────────────────────
-print("\n" + "=" * 60)
-print("DIAGNOSTICO D(q) EN X q=[0.5,0.5,0]")
-print("=" * 60)
-D_X = dynamical_matrix(np.array([0.5, 0.5, 0.0]), B)
-freqs_X = phonon_frequencies(D_X)
-print(f"  Frecuencias en X (cm⁻¹): {np.round(freqs_X, 4)}")
-print(f"  (Referencia DFPT Si en X: ~150, ~150, ~400, ~400, ~430, ~430 cm⁻¹)")
-
-# ── Diagnóstico en L ─────────────────────────────────────────────
-print("\n" + "=" * 60)
-print("DIAGNOSTICO D(q) EN L q=[0.5,0.5,0.5]")
-print("=" * 60)
-D_L = dynamical_matrix(np.array([0.5, 0.5, 0.5]), B)
-freqs_L = phonon_frequencies(D_L)
-print(f"  Frecuencias en L (cm⁻¹): {np.round(freqs_L, 4)}")
 
 # ═════════════════════════════════════════════════════════════════
 #  CALCULAR BANDAS
@@ -217,8 +190,8 @@ for i in range(QN):
 
 n_neg = np.sum(np.any(omega == 0.0, axis=1))
 print(f"  Puntos q con algun modo forzado a 0: {n_neg}")
-print(f"  Frecuencia maxima : {omega.max():.4f} cm⁻¹")
-print(f"  Frecuencia minima no nula: {omega[omega > 1.0].min():.4f} cm⁻¹")
+print(f"  Frecuencia maxima : {omega.max():.4f} THz")
+print(f"  Frecuencia minima no nula: {omega[omega > 1.0].min():.4f} THz")
 
 bandas = np.column_stack((s_path, omega))
 # ═════════════════════════════════════════════════════════════════
@@ -253,7 +226,7 @@ for s_tick in tick_positions:
 
 plt.xlim(s_path[0], s_path[-1])
 plt.ylim(bottom=0)
-plt.ylabel(r'$\omega$ (cm⁻¹)')
+plt.ylabel(r'$\omega$ (THz)')
 plt.xticks(tick_positions, tick_labels)
 plt.tight_layout()
 plt.savefig(output_plot)
