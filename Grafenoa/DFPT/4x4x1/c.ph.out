@@ -1,5 +1,5 @@
 
-     Program PHONON v.7.4 starts on 14May2026 at 11:55:13 
+     Program PHONON v.7.4 starts on 19May2026 at 17:36:15 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,7 +13,7 @@
      Parallel version (MPI), running on    12 processors
 
      MPI processes distributed on     1 nodes
-     160950 MiB available memory on the printing compute node when the environment starts
+     133226 MiB available memory on the printing compute node when the environment starts
  
      Reading input from c.ph.in
 
@@ -129,7 +129,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      number of k points=    80  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -161,7 +161,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Alpha used in Ewald sum =   2.8000
 
      negative rho (up, down):  4.548E-05 0.000E+00
-     PHONON       :      1.08s CPU      1.19s WALL
+     PHONON       :      0.51s CPU      0.59s WALL
 
 
 
@@ -171,22 +171,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
  
      Pert. #  1: Fermi energy shift (Ry) =     5.5145E-25     9.7958E-40
 
-      iter #   1 total cpu time :     2.5 secs   av.it.:   3.9
+      iter #   1 total cpu time :     1.2 secs   av.it.:   3.9
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.926E-06
  
      Pert. #  1: Fermi energy shift (Ry) =    -1.1029E-24     4.8979E-40
 
-      iter #   2 total cpu time :     3.8 secs   av.it.:   6.5
+      iter #   2 total cpu time :     1.7 secs   av.it.:   6.5
       thresh= 1.710E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.634E-07
  
      Pert. #  1: Fermi energy shift (Ry) =     5.5145E-25     0.0000E+00
 
-      iter #   3 total cpu time :     5.0 secs   av.it.:   5.7
+      iter #   3 total cpu time :     2.2 secs   av.it.:   5.7
       thresh= 5.132E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.221E-12
  
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   4 total cpu time :     6.6 secs   av.it.:   9.3
+      iter #   4 total cpu time :     3.0 secs   av.it.:   9.3
       thresh= 1.105E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.726E-15
 
      End of self-consistent calculation
@@ -201,25 +201,25 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Pert. #  1: Fermi energy shift (Ry) =    -8.0954E-18     1.1326E-39
      Pert. #  2: Fermi energy shift (Ry) =     2.0817E-17    -1.2245E-40
 
-      iter #   1 total cpu time :     9.4 secs   av.it.:   5.0
+      iter #   1 total cpu time :     4.1 secs   av.it.:   5.0
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.020E-06
  
      Pert. #  1: Fermi energy shift (Ry) =     5.2042E-18     2.4489E-39
      Pert. #  2: Fermi energy shift (Ry) =    -2.0817E-17    -4.8979E-40
 
-      iter #   2 total cpu time :    12.3 secs   av.it.:   8.2
+      iter #   2 total cpu time :     5.4 secs   av.it.:   8.2
       thresh= 1.738E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.710E-07
  
      Pert. #  1: Fermi energy shift (Ry) =     2.3130E-17     3.6734E-40
      Pert. #  2: Fermi energy shift (Ry) =    -1.6769E-17     1.1632E-39
 
-      iter #   3 total cpu time :    14.9 secs   av.it.:   6.4
+      iter #   3 total cpu time :     6.5 secs   av.it.:   6.4
       thresh= 5.206E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.321E-12
  
      Pert. #  1: Fermi energy shift (Ry) =    -1.1565E-17    -9.1835E-41
      Pert. #  2: Fermi energy shift (Ry) =     2.8912E-18     2.4489E-40
 
-      iter #   4 total cpu time :    18.3 secs   av.it.:  10.4
+      iter #   4 total cpu time :     8.1 secs   av.it.:  10.4
       thresh= 1.822E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.472E-15
 
      End of self-consistent calculation
@@ -233,37 +233,37 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
  
      Pert. #  1: Fermi energy shift (Ry) =    -4.4116E-24     0.0000E+00
 
-      iter #   1 total cpu time :    19.8 secs   av.it.:   5.9
+      iter #   1 total cpu time :     8.8 secs   av.it.:   5.9
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.086E-04
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24    -2.4489E-40
 
-      iter #   2 total cpu time :    21.3 secs   av.it.:   8.1
+      iter #   2 total cpu time :     9.4 secs   av.it.:   8.1
       thresh= 1.444E-03 alpha_mix =  0.700 |ddv_scf|^2 =  3.063E-04
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24     4.8979E-40
 
-      iter #   3 total cpu time :    22.7 secs   av.it.:   7.5
+      iter #   3 total cpu time :    10.0 secs   av.it.:   7.5
       thresh= 1.750E-03 alpha_mix =  0.700 |ddv_scf|^2 =  1.262E-06
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24    -4.8979E-40
 
-      iter #   4 total cpu time :    23.9 secs   av.it.:   5.7
+      iter #   4 total cpu time :    10.6 secs   av.it.:   5.7
       thresh= 1.123E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.896E-09
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24    -4.8979E-40
 
-      iter #   5 total cpu time :    25.3 secs   av.it.:   7.1
+      iter #   5 total cpu time :    11.2 secs   av.it.:   7.1
       thresh= 6.242E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.520E-11
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24    -4.8979E-40
 
-      iter #   6 total cpu time :    26.7 secs   av.it.:   7.3
+      iter #   6 total cpu time :    11.8 secs   av.it.:   7.3
       thresh= 9.757E-07 alpha_mix =  0.700 |ddv_scf|^2 =  8.881E-14
  
      Pert. #  1: Fermi energy shift (Ry) =     2.2058E-24    -4.8979E-40
 
-      iter #   7 total cpu time :    28.2 secs   av.it.:   7.5
+      iter #   7 total cpu time :    12.4 secs   av.it.:   7.5
       thresh= 2.980E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.941E-16
 
      End of self-consistent calculation
@@ -278,25 +278,25 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Pert. #  1: Fermi energy shift (Ry) =     1.9301E-24    -4.0124E-35
      Pert. #  2: Fermi energy shift (Ry) =     5.5145E-25     2.4074E-35
 
-      iter #   1 total cpu time :    30.7 secs   av.it.:   4.7
+      iter #   1 total cpu time :    13.5 secs   av.it.:   4.7
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.996E-06
  
      Pert. #  1: Fermi energy shift (Ry) =     3.0330E-24     3.1347E-38
      Pert. #  2: Fermi energy shift (Ry) =    -1.1029E-24    -1.8808E-37
 
-      iter #   2 total cpu time :    33.4 secs   av.it.:   7.3
+      iter #   2 total cpu time :    14.7 secs   av.it.:   7.3
       thresh= 1.413E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.793E-07
  
      Pert. #  1: Fermi energy shift (Ry) =    -1.6544E-24     0.0000E+00
      Pert. #  2: Fermi energy shift (Ry) =     2.7573E-25     9.4040E-38
 
-      iter #   3 total cpu time :    36.0 secs   av.it.:   6.8
+      iter #   3 total cpu time :    15.8 secs   av.it.:   6.8
       thresh= 4.235E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.066E-12
  
      Pert. #  1: Fermi energy shift (Ry) =     1.3786E-25     1.1755E-38
      Pert. #  2: Fermi energy shift (Ry) =    -1.6544E-24    -2.3510E-38
 
-      iter #   4 total cpu time :    39.4 secs   av.it.:  10.4
+      iter #   4 total cpu time :    17.3 secs   av.it.:  10.4
       thresh= 1.032E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.624E-15
 
      End of self-consistent calculation
@@ -370,7 +370,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -430,7 +430,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      ethr =  1.25E-10,  avg # of iterations = 25.3
 
-     total cpu time spent up to now is       46.9 secs
+     total cpu time spent up to now is       21.3 secs
 
      End of band structure calculation
 
@@ -490,7 +490,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      number of k points=   812  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -528,7 +528,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Alpha used in Ewald sum =   2.8000
 
      negative rho (up, down):  4.548E-05 0.000E+00
-     PHONON       :   1m27.19s CPU   1m30.15s WALL
+     PHONON       :     38.83s CPU     40.25s WALL
 
 
 
@@ -536,31 +536,31 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :    96.0 secs   av.it.:   5.7
+      iter #   1 total cpu time :    42.9 secs   av.it.:   5.7
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.068E-05
 
-      iter #   2 total cpu time :   103.2 secs   av.it.:   9.0
+      iter #   2 total cpu time :    46.1 secs   av.it.:   9.0
       thresh= 4.548E-04 alpha_mix =  0.700 |ddv_scf|^2 =  4.603E-05
 
-      iter #   3 total cpu time :   109.9 secs   av.it.:   8.3
+      iter #   3 total cpu time :    49.1 secs   av.it.:   8.3
       thresh= 6.784E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.976E-06
 
-      iter #   4 total cpu time :   116.7 secs   av.it.:   8.5
+      iter #   4 total cpu time :    52.1 secs   av.it.:   8.5
       thresh= 1.406E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.465E-08
 
-      iter #   5 total cpu time :   124.2 secs   av.it.:   9.5
+      iter #   5 total cpu time :    55.4 secs   av.it.:   9.5
       thresh= 1.861E-05 alpha_mix =  0.700 |ddv_scf|^2 =  2.675E-10
 
-      iter #   6 total cpu time :   131.6 secs   av.it.:   9.5
+      iter #   6 total cpu time :    58.7 secs   av.it.:   9.5
       thresh= 1.635E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.491E-12
 
-      iter #   7 total cpu time :   138.5 secs   av.it.:   8.5
+      iter #   7 total cpu time :    61.7 secs   av.it.:   8.5
       thresh= 1.578E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.831E-14
 
-      iter #   8 total cpu time :   145.7 secs   av.it.:   9.1
+      iter #   8 total cpu time :    64.9 secs   av.it.:   9.1
       thresh= 1.353E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.736E-14
 
-      iter #   9 total cpu time :   152.5 secs   av.it.:   8.4
+      iter #   9 total cpu time :    67.9 secs   av.it.:   8.4
       thresh= 1.933E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.084E-16
 
      End of self-consistent calculation
@@ -572,31 +572,31 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   158.4 secs   av.it.:   5.7
+      iter #   1 total cpu time :    70.6 secs   av.it.:   5.7
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.068E-05
 
-      iter #   2 total cpu time :   165.5 secs   av.it.:   9.0
+      iter #   2 total cpu time :    74.1 secs   av.it.:   9.0
       thresh= 4.548E-04 alpha_mix =  0.700 |ddv_scf|^2 =  4.603E-05
 
-      iter #   3 total cpu time :   172.2 secs   av.it.:   8.3
+      iter #   3 total cpu time :    77.0 secs   av.it.:   8.3
       thresh= 6.784E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.976E-06
 
-      iter #   4 total cpu time :   179.0 secs   av.it.:   8.5
+      iter #   4 total cpu time :    80.0 secs   av.it.:   8.5
       thresh= 1.406E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.465E-08
 
-      iter #   5 total cpu time :   186.4 secs   av.it.:   9.5
+      iter #   5 total cpu time :    83.3 secs   av.it.:   9.5
       thresh= 1.861E-05 alpha_mix =  0.700 |ddv_scf|^2 =  2.675E-10
 
-      iter #   6 total cpu time :   193.8 secs   av.it.:   9.5
+      iter #   6 total cpu time :    86.6 secs   av.it.:   9.5
       thresh= 1.635E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.491E-12
 
-      iter #   7 total cpu time :   200.6 secs   av.it.:   8.5
+      iter #   7 total cpu time :    89.7 secs   av.it.:   8.5
       thresh= 1.578E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.831E-14
 
-      iter #   8 total cpu time :   207.9 secs   av.it.:   9.1
+      iter #   8 total cpu time :    92.9 secs   av.it.:   9.1
       thresh= 1.353E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.736E-14
 
-      iter #   9 total cpu time :   214.6 secs   av.it.:   8.4
+      iter #   9 total cpu time :    95.9 secs   av.it.:   8.4
       thresh= 1.933E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.084E-16
 
      End of self-consistent calculation
@@ -608,19 +608,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   220.3 secs   av.it.:   5.1
+      iter #   1 total cpu time :    98.5 secs   av.it.:   5.1
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.016E-05
 
-      iter #   2 total cpu time :   226.6 secs   av.it.:   7.6
+      iter #   2 total cpu time :   101.2 secs   av.it.:   7.6
       thresh= 3.188E-04 alpha_mix =  0.700 |ddv_scf|^2 =  9.107E-07
 
-      iter #   3 total cpu time :   232.2 secs   av.it.:   6.4
+      iter #   3 total cpu time :   103.7 secs   av.it.:   6.4
       thresh= 9.543E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.087E-11
 
-      iter #   4 total cpu time :   239.8 secs   av.it.:   9.8
+      iter #   4 total cpu time :   107.2 secs   av.it.:   9.8
       thresh= 5.556E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.631E-14
 
-      iter #   5 total cpu time :   247.6 secs   av.it.:  10.1
+      iter #   5 total cpu time :   110.6 secs   av.it.:  10.1
       thresh= 2.762E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.900E-16
 
      End of self-consistent calculation
@@ -632,19 +632,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   253.2 secs   av.it.:   5.1
+      iter #   1 total cpu time :   113.2 secs   av.it.:   5.1
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.016E-05
 
-      iter #   2 total cpu time :   259.5 secs   av.it.:   7.6
+      iter #   2 total cpu time :   116.0 secs   av.it.:   7.6
       thresh= 3.188E-04 alpha_mix =  0.700 |ddv_scf|^2 =  9.107E-07
 
-      iter #   3 total cpu time :   265.2 secs   av.it.:   6.4
+      iter #   3 total cpu time :   118.4 secs   av.it.:   6.4
       thresh= 9.543E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.087E-11
 
-      iter #   4 total cpu time :   272.7 secs   av.it.:   9.8
+      iter #   4 total cpu time :   121.8 secs   av.it.:   9.8
       thresh= 5.556E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.631E-14
 
-      iter #   5 total cpu time :   280.4 secs   av.it.:  10.1
+      iter #   5 total cpu time :   125.3 secs   av.it.:  10.1
       thresh= 2.762E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.900E-16
 
      End of self-consistent calculation
@@ -656,22 +656,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   286.4 secs   av.it.:   5.8
+      iter #   1 total cpu time :   127.9 secs   av.it.:   5.8
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.812E-05
 
-      iter #   2 total cpu time :   293.0 secs   av.it.:   8.2
+      iter #   2 total cpu time :   130.9 secs   av.it.:   8.2
       thresh= 4.257E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.700E-06
 
-      iter #   3 total cpu time :   300.0 secs   av.it.:   8.7
+      iter #   3 total cpu time :   134.1 secs   av.it.:   8.7
       thresh= 1.304E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.017E-07
 
-      iter #   4 total cpu time :   307.3 secs   av.it.:   9.2
+      iter #   4 total cpu time :   137.3 secs   av.it.:   9.2
       thresh= 3.189E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.856E-13
 
-      iter #   5 total cpu time :   314.9 secs   av.it.:   9.8
+      iter #   5 total cpu time :   140.7 secs   av.it.:   9.8
       thresh= 7.652E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.592E-14
 
-      iter #   6 total cpu time :   322.3 secs   av.it.:   9.5
+      iter #   6 total cpu time :   144.0 secs   av.it.:   9.5
       thresh= 1.610E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.401E-16
 
      End of self-consistent calculation
@@ -683,22 +683,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   328.3 secs   av.it.:   5.8
+      iter #   1 total cpu time :   146.7 secs   av.it.:   5.8
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.812E-05
 
-      iter #   2 total cpu time :   335.0 secs   av.it.:   8.2
+      iter #   2 total cpu time :   149.7 secs   av.it.:   8.2
       thresh= 4.257E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.700E-06
 
-      iter #   3 total cpu time :   341.9 secs   av.it.:   8.7
+      iter #   3 total cpu time :   152.8 secs   av.it.:   8.7
       thresh= 1.304E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.017E-07
 
-      iter #   4 total cpu time :   349.2 secs   av.it.:   9.2
+      iter #   4 total cpu time :   156.0 secs   av.it.:   9.2
       thresh= 3.189E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.856E-13
 
-      iter #   5 total cpu time :   356.9 secs   av.it.:   9.8
+      iter #   5 total cpu time :   159.4 secs   av.it.:   9.8
       thresh= 7.652E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.592E-14
 
-      iter #   6 total cpu time :   364.3 secs   av.it.:   9.5
+      iter #   6 total cpu time :   162.7 secs   av.it.:   9.5
       thresh= 1.610E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.401E-16
 
      End of self-consistent calculation
@@ -779,7 +779,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -839,7 +839,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      ethr =  1.25E-10,  avg # of iterations = 25.1
 
-     total cpu time spent up to now is       71.5 secs
+     total cpu time spent up to now is       32.3 secs
 
      End of band structure calculation
 
@@ -899,7 +899,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      number of k points=   422  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -935,7 +935,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Alpha used in Ewald sum =   2.8000
 
      negative rho (up, down):  4.548E-05 0.000E+00
-     PHONON       :   6m15.83s CPU   6m31.15s WALL
+     PHONON       :   2m47.86s CPU   2m54.77s WALL
 
 
 
@@ -943,22 +943,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   394.4 secs   av.it.:   5.9
+      iter #   1 total cpu time :   176.2 secs   av.it.:   5.9
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.004E-05
 
-      iter #   2 total cpu time :   398.2 secs   av.it.:   9.2
+      iter #   2 total cpu time :   178.0 secs   av.it.:   9.2
       thresh= 3.168E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.184E-06
 
-      iter #   3 total cpu time :   402.2 secs   av.it.:   9.4
+      iter #   3 total cpu time :   179.7 secs   av.it.:   9.4
       thresh= 1.784E-04 alpha_mix =  0.700 |ddv_scf|^2 =  9.308E-07
 
-      iter #   4 total cpu time :   406.0 secs   av.it.:   9.2
+      iter #   4 total cpu time :   181.4 secs   av.it.:   9.2
       thresh= 9.648E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.924E-09
 
-      iter #   5 total cpu time :   409.9 secs   av.it.:   9.4
+      iter #   5 total cpu time :   183.2 secs   av.it.:   9.4
       thresh= 6.264E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.477E-14
 
-      iter #   6 total cpu time :   414.0 secs   av.it.:   9.9
+      iter #   6 total cpu time :   185.1 secs   av.it.:   9.9
       thresh= 2.116E-08 alpha_mix =  0.700 |ddv_scf|^2 =  4.496E-15
 
      End of self-consistent calculation
@@ -970,19 +970,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   416.7 secs   av.it.:   4.0
+      iter #   1 total cpu time :   186.4 secs   av.it.:   4.0
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.184E-05
 
-      iter #   2 total cpu time :   419.5 secs   av.it.:   5.5
+      iter #   2 total cpu time :   187.6 secs   av.it.:   5.5
       thresh= 3.441E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.066E-06
 
-      iter #   3 total cpu time :   422.1 secs   av.it.:   5.1
+      iter #   3 total cpu time :   188.8 secs   av.it.:   5.1
       thresh= 1.032E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.825E-13
 
-      iter #   4 total cpu time :   426.3 secs   av.it.:   9.5
+      iter #   4 total cpu time :   190.6 secs   av.it.:   9.5
       thresh= 6.184E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.591E-14
 
-      iter #   5 total cpu time :   430.1 secs   av.it.:   9.0
+      iter #   5 total cpu time :   192.3 secs   av.it.:   9.0
       thresh= 1.610E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.997E-17
 
      End of self-consistent calculation
@@ -994,19 +994,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   433.3 secs   av.it.:   5.7
+      iter #   1 total cpu time :   193.8 secs   av.it.:   5.7
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.732E-05
 
-      iter #   2 total cpu time :   436.7 secs   av.it.:   7.5
+      iter #   2 total cpu time :   195.3 secs   av.it.:   7.5
       thresh= 5.227E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.450E-06
 
-      iter #   3 total cpu time :   440.0 secs   av.it.:   7.1
+      iter #   3 total cpu time :   196.7 secs   av.it.:   7.1
       thresh= 1.565E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.432E-09
 
-      iter #   4 total cpu time :   444.0 secs   av.it.:   9.7
+      iter #   4 total cpu time :   198.5 secs   av.it.:   9.7
       thresh= 3.784E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.871E-13
 
-      iter #   5 total cpu time :   448.1 secs   av.it.:   9.6
+      iter #   5 total cpu time :   200.3 secs   av.it.:   9.6
       thresh= 4.326E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.839E-15
 
      End of self-consistent calculation
@@ -1018,19 +1018,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   451.1 secs   av.it.:   5.1
+      iter #   1 total cpu time :   201.7 secs   av.it.:   5.1
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.219E-05
 
-      iter #   2 total cpu time :   454.4 secs   av.it.:   7.3
+      iter #   2 total cpu time :   203.2 secs   av.it.:   7.3
       thresh= 3.491E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.094E-06
 
-      iter #   3 total cpu time :   457.3 secs   av.it.:   6.0
+      iter #   3 total cpu time :   204.4 secs   av.it.:   6.0
       thresh= 1.046E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.147E-11
 
-      iter #   4 total cpu time :   461.3 secs   av.it.:   9.5
+      iter #   4 total cpu time :   206.2 secs   av.it.:   9.5
       thresh= 3.387E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.167E-14
 
-      iter #   5 total cpu time :   465.3 secs   av.it.:   9.5
+      iter #   5 total cpu time :   208.0 secs   av.it.:   9.5
       thresh= 2.677E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.379E-16
 
      End of self-consistent calculation
@@ -1042,22 +1042,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   468.5 secs   av.it.:   5.3
+      iter #   1 total cpu time :   209.4 secs   av.it.:   5.3
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.693E-05
 
-      iter #   2 total cpu time :   472.2 secs   av.it.:   8.6
+      iter #   2 total cpu time :   211.0 secs   av.it.:   8.6
       thresh= 4.115E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.721E-06
 
-      iter #   3 total cpu time :   476.1 secs   av.it.:   9.6
+      iter #   3 total cpu time :   212.8 secs   av.it.:   9.6
       thresh= 1.929E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.375E-06
 
-      iter #   4 total cpu time :   480.0 secs   av.it.:   9.1
+      iter #   4 total cpu time :   214.5 secs   av.it.:   9.1
       thresh= 1.837E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.232E-11
 
-      iter #   5 total cpu time :   483.9 secs   av.it.:   9.3
+      iter #   5 total cpu time :   216.2 secs   av.it.:   9.3
       thresh= 3.509E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.769E-13
 
-      iter #   6 total cpu time :   487.8 secs   av.it.:   9.3
+      iter #   6 total cpu time :   218.0 secs   av.it.:   9.3
       thresh= 6.140E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.334E-16
 
      End of self-consistent calculation
@@ -1069,19 +1069,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   490.9 secs   av.it.:   5.1
+      iter #   1 total cpu time :   219.4 secs   av.it.:   5.1
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  8.719E-06
 
-      iter #   2 total cpu time :   494.3 secs   av.it.:   7.8
+      iter #   2 total cpu time :   220.9 secs   av.it.:   7.8
       thresh= 2.953E-04 alpha_mix =  0.700 |ddv_scf|^2 =  7.729E-07
 
-      iter #   3 total cpu time :   497.5 secs   av.it.:   7.0
+      iter #   3 total cpu time :   222.4 secs   av.it.:   7.0
       thresh= 8.792E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.637E-10
 
-      iter #   4 total cpu time :   501.5 secs   av.it.:   9.6
+      iter #   4 total cpu time :   224.1 secs   av.it.:   9.6
       thresh= 1.907E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.739E-14
 
-      iter #   5 total cpu time :   505.4 secs   av.it.:   9.5
+      iter #   5 total cpu time :   225.9 secs   av.it.:   9.5
       thresh= 2.177E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.203E-15
 
      End of self-consistent calculation
@@ -1159,7 +1159,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -1219,7 +1219,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      ethr =  1.25E-10,  avg # of iterations = 25.2
 
-     total cpu time spent up to now is      118.8 secs
+     total cpu time spent up to now is       53.6 secs
 
      End of band structure calculation
 
@@ -1279,7 +1279,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      number of k points=   812  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -1315,7 +1315,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Alpha used in Ewald sum =   2.8000
 
      negative rho (up, down):  4.548E-05 0.000E+00
-     PHONON       :   8m54.95s CPU   9m16.68s WALL
+     PHONON       :   3m59.10s CPU   4m 8.82s WALL
 
 
 
@@ -1323,22 +1323,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   562.7 secs   av.it.:   5.9
+      iter #   1 total cpu time :   251.6 secs   av.it.:   5.9
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.079E-05
 
-      iter #   2 total cpu time :   570.0 secs   av.it.:   9.1
+      iter #   2 total cpu time :   254.8 secs   av.it.:   9.1
       thresh= 3.285E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.892E-06
 
-      iter #   3 total cpu time :   577.4 secs   av.it.:   9.5
+      iter #   3 total cpu time :   258.1 secs   av.it.:   9.5
       thresh= 1.701E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.079E-06
 
-      iter #   4 total cpu time :   584.6 secs   av.it.:   9.0
+      iter #   4 total cpu time :   261.3 secs   av.it.:   9.0
       thresh= 1.442E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.096E-08
 
-      iter #   5 total cpu time :   592.4 secs   av.it.:   9.7
+      iter #   5 total cpu time :   264.6 secs   av.it.:   9.7
       thresh= 1.047E-05 alpha_mix =  0.700 |ddv_scf|^2 =  4.949E-13
 
-      iter #   6 total cpu time :   600.1 secs   av.it.:   9.9
+      iter #   6 total cpu time :   268.1 secs   av.it.:   9.9
       thresh= 7.035E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.190E-15
 
      End of self-consistent calculation
@@ -1350,25 +1350,25 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   606.2 secs   av.it.:   5.8
+      iter #   1 total cpu time :   270.8 secs   av.it.:   5.8
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.373E-05
 
-      iter #   2 total cpu time :   613.4 secs   av.it.:   9.0
+      iter #   2 total cpu time :   274.0 secs   av.it.:   9.0
       thresh= 3.705E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.152E-06
 
-      iter #   3 total cpu time :   620.9 secs   av.it.:   9.4
+      iter #   3 total cpu time :   277.3 secs   av.it.:   9.4
       thresh= 2.270E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.521E-06
 
-      iter #   4 total cpu time :   628.1 secs   av.it.:   8.9
+      iter #   4 total cpu time :   280.5 secs   av.it.:   8.9
       thresh= 1.588E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.216E-09
 
-      iter #   5 total cpu time :   635.7 secs   av.it.:   9.8
+      iter #   5 total cpu time :   283.9 secs   av.it.:   9.8
       thresh= 4.708E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.569E-12
 
-      iter #   6 total cpu time :   643.0 secs   av.it.:   9.4
+      iter #   6 total cpu time :   287.2 secs   av.it.:   9.4
       thresh= 1.889E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.276E-14
 
-      iter #   7 total cpu time :   650.5 secs   av.it.:   9.6
+      iter #   7 total cpu time :   290.6 secs   av.it.:   9.6
       thresh= 1.130E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.449E-17
 
      End of self-consistent calculation
@@ -1380,19 +1380,19 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   656.2 secs   av.it.:   5.0
+      iter #   1 total cpu time :   293.2 secs   av.it.:   5.0
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  4.235E-06
 
-      iter #   2 total cpu time :   662.7 secs   av.it.:   7.8
+      iter #   2 total cpu time :   296.0 secs   av.it.:   7.8
       thresh= 2.058E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.777E-07
 
-      iter #   3 total cpu time :   668.4 secs   av.it.:   6.5
+      iter #   3 total cpu time :   298.5 secs   av.it.:   6.5
       thresh= 6.146E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.146E-11
 
-      iter #   4 total cpu time :   675.3 secs   av.it.:   8.5
+      iter #   4 total cpu time :   301.6 secs   av.it.:   8.5
       thresh= 3.385E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.222E-14
 
-      iter #   5 total cpu time :   683.1 secs   av.it.:   9.9
+      iter #   5 total cpu time :   305.0 secs   av.it.:   9.9
       thresh= 2.055E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.390E-16
 
      End of self-consistent calculation
@@ -1404,22 +1404,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   689.0 secs   av.it.:   5.2
+      iter #   1 total cpu time :   307.7 secs   av.it.:   5.2
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.264E-05
 
-      iter #   2 total cpu time :   695.9 secs   av.it.:   8.3
+      iter #   2 total cpu time :   310.7 secs   av.it.:   8.3
       thresh= 3.555E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.462E-06
 
-      iter #   3 total cpu time :   703.4 secs   av.it.:   9.5
+      iter #   3 total cpu time :   314.0 secs   av.it.:   9.5
       thresh= 1.209E-04 alpha_mix =  0.700 |ddv_scf|^2 =  9.351E-07
 
-      iter #   4 total cpu time :   710.8 secs   av.it.:   9.3
+      iter #   4 total cpu time :   317.4 secs   av.it.:   9.3
       thresh= 9.670E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.495E-10
 
-      iter #   5 total cpu time :   718.2 secs   av.it.:   9.3
+      iter #   5 total cpu time :   320.7 secs   av.it.:   9.3
       thresh= 1.223E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.442E-14
 
-      iter #   6 total cpu time :   725.7 secs   av.it.:   9.7
+      iter #   6 total cpu time :   324.1 secs   av.it.:   9.7
       thresh= 1.855E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.925E-16
 
      End of self-consistent calculation
@@ -1431,22 +1431,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   731.5 secs   av.it.:   5.1
+      iter #   1 total cpu time :   326.8 secs   av.it.:   5.1
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.075E-05
 
-      iter #   2 total cpu time :   738.2 secs   av.it.:   8.2
+      iter #   2 total cpu time :   329.7 secs   av.it.:   8.2
       thresh= 3.279E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.151E-06
 
-      iter #   3 total cpu time :   745.6 secs   av.it.:   9.4
+      iter #   3 total cpu time :   333.0 secs   av.it.:   9.4
       thresh= 1.073E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.984E-07
 
-      iter #   4 total cpu time :   752.9 secs   av.it.:   9.3
+      iter #   4 total cpu time :   336.3 secs   av.it.:   9.3
       thresh= 7.736E-05 alpha_mix =  0.700 |ddv_scf|^2 =  9.790E-11
 
-      iter #   5 total cpu time :   760.3 secs   av.it.:   9.3
+      iter #   5 total cpu time :   339.6 secs   av.it.:   9.3
       thresh= 9.895E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.991E-14
 
-      iter #   6 total cpu time :   768.0 secs   av.it.:   9.9
+      iter #   6 total cpu time :   343.0 secs   av.it.:   9.9
       thresh= 1.411E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.814E-16
 
      End of self-consistent calculation
@@ -1458,22 +1458,22 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      Self-consistent Calculation
 
-      iter #   1 total cpu time :   774.0 secs   av.it.:   5.7
+      iter #   1 total cpu time :   345.7 secs   av.it.:   5.7
       thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.453E-05
 
-      iter #   2 total cpu time :   780.3 secs   av.it.:   7.5
+      iter #   2 total cpu time :   348.5 secs   av.it.:   7.5
       thresh= 5.876E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.103E-06
 
-      iter #   3 total cpu time :   786.4 secs   av.it.:   7.1
+      iter #   3 total cpu time :   351.2 secs   av.it.:   7.1
       thresh= 1.762E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.428E-09
 
-      iter #   4 total cpu time :   794.0 secs   av.it.:   9.7
+      iter #   4 total cpu time :   354.6 secs   av.it.:   9.7
       thresh= 4.927E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.356E-13
 
-      iter #   5 total cpu time :   801.3 secs   av.it.:   9.3
+      iter #   5 total cpu time :   357.9 secs   av.it.:   9.3
       thresh= 6.600E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.194E-14
 
-      iter #   6 total cpu time :   808.8 secs   av.it.:   9.4
+      iter #   6 total cpu time :   361.3 secs   av.it.:   9.4
       thresh= 1.481E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.071E-17
 
      End of self-consistent calculation
@@ -1511,132 +1511,132 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      freq (   5-   5) =       1345.1  [cm-1]   --> A_1  D_1  S_1      
      freq (   6-   6) =       1398.1  [cm-1]   --> B_1  D_3  S_3      
  
-     init_run     :      0.46s CPU      0.47s WALL (       3 calls)
-     electrons    :    115.48s CPU    118.29s WALL (       3 calls)
+     init_run     :      0.23s CPU      0.24s WALL (       3 calls)
+     electrons    :     51.88s CPU     53.32s WALL (       3 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       3 calls)
-     potinit      :      0.03s CPU      0.03s WALL (       3 calls)
-     hinit0       :      0.06s CPU      0.06s WALL (       3 calls)
+     potinit      :      0.01s CPU      0.01s WALL (       3 calls)
+     hinit0       :      0.02s CPU      0.02s WALL (       3 calls)
 
      Called by electrons:
-     c_bands      :    115.46s CPU    118.27s WALL (       3 calls)
-     v_of_rho     :      0.01s CPU      0.01s WALL (       4 calls)
-     newd         :      0.02s CPU      0.02s WALL (       4 calls)
-     PAW_pot      :      0.03s CPU      0.03s WALL (       4 calls)
+     c_bands      :     51.87s CPU     53.31s WALL (       3 calls)
+     v_of_rho     :      0.00s CPU      0.00s WALL (       4 calls)
+     newd         :      0.01s CPU      0.01s WALL (       4 calls)
+     PAW_pot      :      0.01s CPU      0.01s WALL (       4 calls)
 
      Called by c_bands:
-     init_us_2    :      7.23s CPU      8.10s WALL (   58742 calls)
-     cegterg      :    103.26s CPU    105.40s WALL (    3798 calls)
+     init_us_2    :      2.82s CPU      3.07s WALL (   58742 calls)
+     cegterg      :     46.47s CPU     47.68s WALL (    3798 calls)
 
      Called by *egterg:
-     cdiaghg      :      9.43s CPU      9.63s WALL (   53562 calls)
-     h_psi        :    504.72s CPU    519.40s WALL (  457110 calls)
-     s_psi        :     16.54s CPU     17.03s WALL (  896628 calls)
-     g_psi        :      0.55s CPU      0.56s WALL (   51516 calls)
+     cdiaghg      :      4.17s CPU      4.27s WALL (   53562 calls)
+     h_psi        :    229.62s CPU    237.14s WALL (  457110 calls)
+     s_psi        :      7.78s CPU      8.06s WALL (  896628 calls)
+     g_psi        :      0.29s CPU      0.30s WALL (   51516 calls)
 
      Called by h_psi:
-     h_psi:calbec :     24.71s CPU     25.31s WALL (  457110 calls)
-     vloc_psi     :    465.53s CPU    479.24s WALL (  457110 calls)
-     add_vuspsi   :      9.42s CPU      9.67s WALL (  457110 calls)
+     h_psi:calbec :      8.52s CPU      8.76s WALL (  457110 calls)
+     vloc_psi     :    214.79s CPU    221.88s WALL (  457110 calls)
+     add_vuspsi   :      4.05s CPU      4.18s WALL (  457110 calls)
 
      General routines
-     calbec       :     42.35s CPU     43.69s WALL (  984928 calls)
-     fft          :      0.28s CPU      0.32s WALL (    1092 calls)
-     ffts         :      1.67s CPU      1.93s WALL (    8062 calls)
-     fftw         :    501.96s CPU    521.65s WALL ( 4048416 calls)
-     davcio       :     11.21s CPU     13.52s WALL (  220293 calls)
+     calbec       :     17.12s CPU     17.83s WALL (  984928 calls)
+     fft          :      0.12s CPU      0.13s WALL (    1092 calls)
+     ffts         :      0.76s CPU      0.81s WALL (    8062 calls)
+     fftw         :    230.86s CPU    240.17s WALL ( 4048416 calls)
+     davcio       :      3.83s CPU      4.29s WALL (  220293 calls)
  
      Parallel routines
  
-     PHONON       :  12m56.43s CPU  13m28.95s WALL
+     PHONON       :   5m47.12s CPU   6m 1.35s WALL
 
      INITIALIZATION: 
-     phq_setup    :      0.02s CPU      0.02s WALL (       4 calls)
-     phq_init     :      9.81s CPU     10.26s WALL (       4 calls)
+     phq_setup    :      0.01s CPU      0.01s WALL (       4 calls)
+     phq_init     :      4.18s CPU      4.42s WALL (       4 calls)
  
-     phq_init     :      9.81s CPU     10.26s WALL (       4 calls)
-     set_drhoc    :      0.01s CPU      0.01s WALL (      12 calls)
+     phq_init     :      4.18s CPU      4.42s WALL (       4 calls)
+     set_drhoc    :      0.00s CPU      0.00s WALL (      12 calls)
      init_vloc    :      0.01s CPU      0.01s WALL (       4 calls)
-     init_us_1    :      0.03s CPU      0.03s WALL (       4 calls)
-     init_us_2    :      7.23s CPU      8.10s WALL (   58742 calls)
-     newd         :      0.02s CPU      0.02s WALL (       4 calls)
-     dvanqq       :      0.17s CPU      0.17s WALL (       4 calls)
-     drho         :      8.60s CPU      8.91s WALL (       4 calls)
-     drhous       :      7.86s CPU      8.11s WALL (       4 calls)
-     nldyntot     :      0.09s CPU      0.09s WALL (       4 calls)
+     init_us_1    :      0.01s CPU      0.01s WALL (       4 calls)
+     init_us_2    :      2.82s CPU      3.07s WALL (   58742 calls)
+     newd         :      0.01s CPU      0.01s WALL (       4 calls)
+     dvanqq       :      0.07s CPU      0.08s WALL (       4 calls)
+     drho         :      3.59s CPU      3.77s WALL (       4 calls)
+     drhous       :      3.26s CPU      3.41s WALL (       4 calls)
+     nldyntot     :      0.04s CPU      0.04s WALL (       4 calls)
  
      DYNAMICAL MATRIX:
-     dynmat0      :      0.63s CPU      0.68s WALL (       4 calls)
-     dynmat_us    :      0.62s CPU      0.66s WALL (       4 calls)
+     dynmat0      :      0.31s CPU      0.33s WALL (       4 calls)
+     dynmat_us    :      0.30s CPU      0.33s WALL (       4 calls)
      addusdynmat  :      0.00s CPU      0.00s WALL (       4 calls)
      d2ionq       :      0.00s CPU      0.00s WALL (       4 calls)
-     dynmatcc     :      0.01s CPU      0.01s WALL (       4 calls)
-     phqscf       :    650.14s CPU    679.22s WALL (       4 calls)
+     dynmatcc     :      0.00s CPU      0.00s WALL (       4 calls)
+     phqscf       :    290.58s CPU    303.03s WALL (       4 calls)
      dynmatrix    :      0.00s CPU      0.00s WALL (       4 calls)
  
-     phqscf       :    650.14s CPU    679.22s WALL (       4 calls)
-     solve_linter :    647.79s CPU    676.59s WALL (      22 calls)
-     sth_kernel   :    612.28s CPU    639.37s WALL (     127 calls)
-     h_prec       :      1.41s CPU      1.59s WALL (   39128 calls)
-     apply_dpot_b :     41.78s CPU     46.50s WALL (   33150 calls)
-     ortho        :      6.99s CPU      7.34s WALL (   39768 calls)
-     cgsolve      :    487.91s CPU    502.68s WALL (   39768 calls)
-     incdrhoscf   :     55.59s CPU     60.08s WALL (   39768 calls)
+     phqscf       :    290.58s CPU    303.03s WALL (       4 calls)
+     solve_linter :    289.41s CPU    301.74s WALL (      22 calls)
+     sth_kernel   :    274.27s CPU    285.85s WALL (     127 calls)
+     h_prec       :      0.55s CPU      0.60s WALL (   39128 calls)
+     apply_dpot_b :     17.85s CPU     19.50s WALL (   33150 calls)
+     ortho        :      2.99s CPU      3.26s WALL (   39768 calls)
+     cgsolve      :    221.99s CPU    229.43s WALL (   39768 calls)
+     incdrhoscf   :     24.50s CPU     26.03s WALL (   39768 calls)
                                         0.00s GPU  (   39768 calls)
-     addusddens   :      1.29s CPU      1.32s WALL (     149 calls)
-     dv_of_drho   :      0.12s CPU      0.13s WALL (     135 calls)
-     mix_pot      :      0.10s CPU      0.25s WALL (     127 calls)
+     addusddens   :      0.53s CPU      0.54s WALL (     149 calls)
+     dv_of_drho   :      0.05s CPU      0.05s WALL (     135 calls)
+     mix_pot      :      0.05s CPU      0.09s WALL (     127 calls)
      ef_shift     :      0.01s CPU      0.01s WALL (      19 calls)
-     ef_shift_wfc :      0.01s CPU      0.04s WALL (       4 calls)
-     localdos     :      0.35s CPU      0.37s WALL (       4 calls)
-     drhodv       :      2.34s CPU      2.60s WALL (      22 calls)
-     psymdvscf    :      9.40s CPU      9.51s WALL (     127 calls)
-     newdq        :      1.15s CPU      1.16s WALL (     127 calls)
-     adddvscf     :      1.90s CPU      1.96s WALL (   33150 calls)
-     com_dvloc    :      2.25s CPU      2.60s WALL (    6774 calls)
+     ef_shift_wfc :      0.00s CPU      0.02s WALL (       4 calls)
+     localdos     :      0.17s CPU      0.18s WALL (       4 calls)
+     drhodv       :      1.17s CPU      1.28s WALL (      22 calls)
+     psymdvscf    :      3.61s CPU      3.66s WALL (     127 calls)
+     newdq        :      0.46s CPU      0.47s WALL (     127 calls)
+     adddvscf     :      0.77s CPU      0.84s WALL (   33150 calls)
+     com_dvloc    :      0.98s CPU      1.05s WALL (    6774 calls)
                                         0.00s GPU  (    6774 calls)
-     addcore      :      0.12s CPU      0.12s WALL (     303 calls)
+     addcore      :      0.05s CPU      0.05s WALL (     303 calls)
                                         0.00s GPU  (     303 calls)
-     drhodvus     :      0.01s CPU      0.01s WALL (      22 calls)
+     drhodvus     :      0.00s CPU      0.01s WALL (      22 calls)
  
-     dvqpsi_us    :     19.34s CPU     20.39s WALL (    6618 calls)
+     dvqpsi_us    :      8.69s CPU      9.21s WALL (    6618 calls)
                                         0.00s GPU  (    6618 calls)
-     dvqpsi_us_on :      1.83s CPU      1.86s WALL (    6618 calls)
+     dvqpsi_us_on :      0.72s CPU      0.73s WALL (    6618 calls)
  
-     add_vuspsi   :      9.42s CPU      9.67s WALL (  457110 calls)
-     addusdbec    :      4.16s CPU      4.25s WALL (   46386 calls)
+     add_vuspsi   :      4.05s CPU      4.18s WALL (  457110 calls)
+     addusdbec    :      1.55s CPU      1.63s WALL (   46386 calls)
  
-     drhodvus     :      0.01s CPU      0.01s WALL (      22 calls)
+     drhodvus     :      0.00s CPU      0.01s WALL (      22 calls)
  
       General routines
-     calbec       :     42.35s CPU     43.69s WALL (  984928 calls)
-     fft          :      0.28s CPU      0.32s WALL (    1092 calls)
-     ffts         :      1.67s CPU      1.93s WALL (    8062 calls)
-     fftw         :    501.96s CPU    521.65s WALL ( 4048416 calls)
-     davcio       :     11.21s CPU     13.52s WALL (  220293 calls)
-     write_rec    :      0.04s CPU      0.14s WALL (     149 calls)
+     calbec       :     17.12s CPU     17.83s WALL (  984928 calls)
+     fft          :      0.12s CPU      0.13s WALL (    1092 calls)
+     ffts         :      0.76s CPU      0.81s WALL (    8062 calls)
+     fftw         :    230.86s CPU    240.17s WALL ( 4048416 calls)
+     davcio       :      3.83s CPU      4.29s WALL (  220293 calls)
+     write_rec    :      0.04s CPU      0.06s WALL (     149 calls)
  
       Additional routines
-     ch_psi       :    469.97s CPU    484.17s WALL (  399750 calls)
-     last         :     39.41s CPU     40.47s WALL (  399750 calls)
-     Hesh         :      2.50s CPU      2.57s WALL (  399750 calls)
-     ch_psi_all_k :     35.52s CPU     36.49s WALL (  399750 calls)
+     ch_psi       :    214.74s CPU    221.92s WALL (  399750 calls)
+     last         :     18.49s CPU     19.07s WALL (  399750 calls)
+     Hesh         :      0.98s CPU      1.01s WALL (  399750 calls)
+     ch_psi_all_k :     16.85s CPU     17.39s WALL (  399750 calls)
                                         0.00s GPU  (  399750 calls)
-     ch_psi_calbe :     11.43s CPU     11.72s WALL (  399750 calls)
+     ch_psi_calbe :      5.92s CPU      6.10s WALL (  399750 calls)
                                         0.00s GPU  (  399750 calls)
-     h_psi_bgrp   :    505.56s CPU    520.26s WALL (  457110 calls)
-     h_psi        :    504.72s CPU    519.40s WALL (  457110 calls)
-     h_psi:pot    :    501.58s CPU    516.15s WALL (  457110 calls)
-     h_psi:calbec :     24.71s CPU     25.31s WALL (  457110 calls)
-     s_psi_bgrp   :     20.73s CPU     21.33s WALL (  896628 calls)
-     s_psi        :     16.54s CPU     17.03s WALL (  896628 calls)
+     h_psi_bgrp   :    230.06s CPU    237.59s WALL (  457110 calls)
+     h_psi        :    229.62s CPU    237.14s WALL (  457110 calls)
+     h_psi:pot    :    228.31s CPU    235.78s WALL (  457110 calls)
+     h_psi:calbec :      8.52s CPU      8.76s WALL (  457110 calls)
+     s_psi_bgrp   :      9.64s CPU      9.98s WALL (  896628 calls)
+     s_psi        :      7.78s CPU      8.06s WALL (  896628 calls)
  
  
-     PHONON       :  12m56.43s CPU  13m28.95s WALL
+     PHONON       :   5m47.12s CPU   6m 1.35s WALL
 
  
-   This run was terminated on:  12: 8:42  14May2026            
+   This run was terminated on:  17:42:16  19May2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

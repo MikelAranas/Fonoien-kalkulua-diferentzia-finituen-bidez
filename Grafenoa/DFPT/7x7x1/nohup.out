@@ -1,0 +1,78 @@
+[1m
+============================================================
+   Grafeno — Dispersión de fonones con QE
+   2026-05-14 12:15:46
+   Cores MPI: 12
+============================================================
+[0m
+[1;33mVerificando ficheros de input...[0m
+  [0;32m✓[0m c.scf.in
+  [0;32m✓[0m c.ph.in
+  [0;32m✓[0m c.q2r.in
+  [0;32m✓[0m c.matdyn.in
+
+
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[1m  Paso 1/5: SCF (pw.x)[0m
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+  Inicio : 12:15:46
+  Fin    : 12:15:52  (6 s)
+  [0;32m✓       JOB  DONE.[0m
+  [0;32m[1mPaso 1 completado.[0m
+  Energía total : -35.64069112 Ry
+
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[1m  Paso 2/5: DFPT fonones (ph.x)[0m
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+  Inicio : 12:15:52
+  [1;33mEste paso puede tardar varios minutos...[0m
+  Fin    : 12:46:09  (1817 s)
+  [0;32m✓       JOB  DONE.[0m
+  [0;32m[1mPaso 2 completado.[0m
+  Matrices dinámicas escritas: 0
+?
+
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[1m  Paso 3/5: Fourier inversa — constantes de fuerza (q2r.x)[0m
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+  Inicio : 12:46:09
+  Fin    : 12:46:10  (1 s)
+  [0;32m✓       JOB  DONE.[0m
+  [0;32m[1mPaso 3 completado.[0m
+  [0;32m✓ graphene.fc generado[0m  (60K)
+
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[1m  Paso 4/5: Dispersión de fonones (matdyn.x)[0m
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+  Inicio : 12:46:10
+  Fin    : 12:46:10  (0 s)
+  [0;32m✓       JOB  DONE.[0m
+  [0;32m[1mPaso 4 completado.[0m
+  [0;32m✓ graphene.freq generado[0m
+RUN.sh: line 128: [: 0
+0: integer expression expected
+  [0;32m✓ Sin frecuencias negativas detectadas[0m
+
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[1m  Paso 5/5: Generando figura (bandak_cm.py)[0m
+[0;36m[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+  Inicio : 12:46:10
+  Fin    : 12:46:12  (2 s)
+  [0;32m[1mPaso 5 completado.[0m
+  [0;32m[1m✓ Figura generada: graphene_bandak.pdf[0m
+
+[0;32m[1m
+============================================================
+   ✓ CÁLCULO COMPLETADO
+   Tiempo total: 30m 26s
+============================================================
+[0m
+  Ficheros generados:
+    [0;32m✓[0m c.scf.out  (28K)
+    [0;32m✓[0m c.ph.out  (124K)
+    [0;32m✓[0m c.q2r.out  (4.0K)
+    [0;32m✓[0m c.matdyn.out  (4.0K)
+    [0;32m✓[0m graphene.fc  (60K)
+    [0;32m✓[0m graphene.freq  (20K)
+    [0;32m✓[0m graphene_bandak.pdf  (16K)
+

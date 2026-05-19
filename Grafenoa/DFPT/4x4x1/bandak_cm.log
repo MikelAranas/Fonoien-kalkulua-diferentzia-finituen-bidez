@@ -25,4 +25,21 @@
  1.4973495  1.51068282 1.52401615 1.53734947 1.55068279 1.56401611
  1.57734943]
 Guardado graphene_bandak_cm.dat
-Guardado graphene_bandak.pdf
+Traceback (most recent call last):
+  File "/home/TFG_24-25/maranas/CALCULATIONS/Grafenoa/DFPT/4x4x1/bandak_cm.py", line 42, in <module>
+    fig, ax = plt.subplots(figsize=(8 * (1 + np.sqrt(5) / 2), 10))
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1759, in subplots
+    fig = figure(**fig_kw)
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1027, in figure
+    manager = new_figure_manager(
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 549, in new_figure_manager
+    _warn_if_gui_out_of_main_thread()
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 526, in _warn_if_gui_out_of_main_thread
+    canvas_class = cast(type[FigureCanvasBase], _get_backend_mod().FigureCanvas)
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 358, in _get_backend_mod
+    switch_backend(rcParams._get("backend"))
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/pyplot.py", line 384, in switch_backend
+    current_framework = cbook._get_running_interactive_framework()
+  File "/home/TFG_24-25/maranas/Python_envs/base/lib/python3.10/site-packages/matplotlib/cbook.py", line 80, in _get_running_interactive_framework
+    if not _c_internal_utils.display_is_valid():
+KeyboardInterrupt

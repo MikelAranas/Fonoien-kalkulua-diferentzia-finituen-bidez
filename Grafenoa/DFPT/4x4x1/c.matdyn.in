@@ -1,5 +1,5 @@
 &INPUT
-  asr              = 'crystal'
+  asr              = 'simple'
   flfrc            = 'graphene.fc'
   flfrq            = 'graphene.freq'
   q_in_band_form   = .true.

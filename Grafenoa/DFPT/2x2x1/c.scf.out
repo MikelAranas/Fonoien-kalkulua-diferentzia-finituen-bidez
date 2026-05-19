@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.4 starts on 14May2026 at 11:21:52 
+     Program PWSCF v.7.4 starts on 19May2026 at 17:29: 7 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,7 +13,7 @@
      Parallel version (MPI), running on    12 processors
 
      MPI processes distributed on     1 nodes
-     158918 MiB available memory on the printing compute node when the environment starts
+     131299 MiB available memory on the printing compute node when the environment starts
  
      Reading input from c.scf.in
 
@@ -71,7 +71,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
 
      PseudoPot. # 1 for C  read from file:
-     ./C.upf
+     ../../../pseudopotentzialak/C.upf
      MD5 check sum: 1b594deb0bcc8b4bffb8cfaf75c62b92
      Pseudo is Projector augmented-wave + core cor, Zval =  4.0
      Generated using ATOMPAW code
@@ -205,7 +205,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Starting wfcs are   16 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
 
-     total cpu time spent up to now is        0.8 secs
+     total cpu time spent up to now is        0.5 secs
 
      per-process dynamical memory:    50.3 Mb
 
@@ -217,7 +217,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  2.556E-05 0.000E+00
 
-     total cpu time spent up to now is        1.9 secs
+     total cpu time spent up to now is        1.1 secs
 
      total energy              =     -35.60785581 Ry
      estimated scf accuracy    <       0.20448579 Ry
@@ -228,7 +228,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  3.474E-05 0.000E+00
 
-     total cpu time spent up to now is        2.8 secs
+     total cpu time spent up to now is        1.5 secs
 
      total energy              =     -35.64036440 Ry
      estimated scf accuracy    <       0.00271655 Ry
@@ -239,7 +239,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  4.428E-05 0.000E+00
 
-     total cpu time spent up to now is        4.1 secs
+     total cpu time spent up to now is        2.1 secs
 
      total energy              =     -35.64068046 Ry
      estimated scf accuracy    <       0.00013486 Ry
@@ -252,7 +252,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  4.548E-05 0.000E+00
 
-     total cpu time spent up to now is        5.0 secs
+     total cpu time spent up to now is        2.5 secs
 
      total energy              =     -35.64069035 Ry
      estimated scf accuracy    <       0.00000067 Ry
@@ -263,7 +263,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  4.548E-05 0.000E+00
 
-     total cpu time spent up to now is        5.9 secs
+     total cpu time spent up to now is        2.8 secs
 
      total energy              =     -35.64069112 Ry
      estimated scf accuracy    <       0.00000006 Ry
@@ -274,7 +274,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  4.548E-05 0.000E+00
 
-     total cpu time spent up to now is        6.5 secs
+     total cpu time spent up to now is        3.1 secs
 
      total energy              =     -35.64069112 Ry
      estimated scf accuracy    <          1.2E-09 Ry
@@ -285,7 +285,7 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
 
      negative rho (up, down):  4.548E-05 0.000E+00
 
-     total cpu time spent up to now is        7.3 secs
+     total cpu time spent up to now is        3.5 secs
 
      End of self-consistent calculation
 
@@ -629,49 +629,49 @@ read_pp_mesh; mismatch in mesh size, discarding the one in header
      Writing all to output data dir ./tmp/graphene.save/ :
      XML data file, charge density, pseudopotentials, collected wavefunctions
  
-     init_run     :      0.61s CPU      0.64s WALL (       1 calls)
-     electrons    :      6.42s CPU      6.56s WALL (       1 calls)
+     init_run     :      0.42s CPU      0.45s WALL (       1 calls)
+     electrons    :      2.87s CPU      2.97s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      0.48s CPU      0.49s WALL (       1 calls)
+     wfcinit      :      0.32s CPU      0.34s WALL (       1 calls)
      potinit      :      0.01s CPU      0.01s WALL (       1 calls)
-     hinit0       :      0.05s CPU      0.05s WALL (       1 calls)
+     hinit0       :      0.03s CPU      0.04s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :      5.44s CPU      5.57s WALL (       7 calls)
-     sum_band     :      0.87s CPU      0.88s WALL (       7 calls)
+     c_bands      :      2.44s CPU      2.52s WALL (       7 calls)
+     sum_band     :      0.39s CPU      0.40s WALL (       7 calls)
      v_of_rho     :      0.01s CPU      0.01s WALL (       8 calls)
-     newd         :      0.04s CPU      0.05s WALL (       8 calls)
-     PAW_pot      :      0.05s CPU      0.05s WALL (       8 calls)
-     mix_rho      :      0.01s CPU      0.01s WALL (       7 calls)
+     newd         :      0.02s CPU      0.02s WALL (       8 calls)
+     PAW_pot      :      0.03s CPU      0.03s WALL (       8 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       7 calls)
 
      Called by c_bands:
-     init_us_2    :      0.15s CPU      0.16s WALL (    1200 calls)
-     cegterg      :      5.17s CPU      5.28s WALL (     560 calls)
+     init_us_2    :      0.06s CPU      0.06s WALL (    1200 calls)
+     cegterg      :      2.33s CPU      2.42s WALL (     560 calls)
 
      Called by *egterg:
-     cdiaghg      :      0.33s CPU      0.34s WALL (    3177 calls)
-     h_psi        :      4.58s CPU      4.68s WALL (    3257 calls)
-     s_psi        :      0.07s CPU      0.07s WALL (    3257 calls)
-     g_psi        :      0.02s CPU      0.02s WALL (    2617 calls)
+     cdiaghg      :      0.13s CPU      0.14s WALL (    3177 calls)
+     h_psi        :      2.18s CPU      2.27s WALL (    3257 calls)
+     s_psi        :      0.03s CPU      0.03s WALL (    3257 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (    2617 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.22s CPU      0.23s WALL (    3257 calls)
-     vloc_psi     :      4.23s CPU      4.32s WALL (    3257 calls)
-     add_vuspsi   :      0.08s CPU      0.08s WALL (    3257 calls)
+     h_psi:calbec :      0.07s CPU      0.07s WALL (    3257 calls)
+     vloc_psi     :      2.06s CPU      2.14s WALL (    3257 calls)
+     add_vuspsi   :      0.03s CPU      0.03s WALL (    3257 calls)
 
      General routines
-     calbec       :      0.25s CPU      0.26s WALL (    3817 calls)
+     calbec       :      0.08s CPU      0.09s WALL (    3817 calls)
      fft          :      0.01s CPU      0.01s WALL (      32 calls)
      ffts         :      0.00s CPU      0.00s WALL (       7 calls)
-     fftw         :      4.28s CPU      4.36s WALL (   34532 calls)
+     fftw         :      2.07s CPU      2.16s WALL (   34532 calls)
  
      Parallel routines
  
-     PWSCF        :      7.26s CPU      7.54s WALL
+     PWSCF        :      3.39s CPU      3.59s WALL
 
  
-   This run was terminated on:  11:22: 0  14May2026            
+   This run was terminated on:  17:29:11  19May2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
