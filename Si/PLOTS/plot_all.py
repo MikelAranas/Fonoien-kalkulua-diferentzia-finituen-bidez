@@ -90,7 +90,7 @@ for ax, size in zip(axes, sizes):
     ax.tick_params(axis='x', which='both', bottom=False, labelbottom=False)
     ax.tick_params(axis='y', labelsize=11)
     ax.axhline(y=0, color='black', linewidth=0.5)
-    ax.set_ylabel(r'$\omega$ (cm$^{-1}$)', fontsize=11)
+    ax.set_ylabel(r'$\omega$ (THz)', fontsize=11)
     ax.legend(fontsize=10)
 
 fig.suptitle('DF (puntos) vs DFPT (líneas) — Si', fontsize=14)
