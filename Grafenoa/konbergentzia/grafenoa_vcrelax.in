@@ -1,0 +1,45 @@
+&CONTROL
+  calculation   = 'vc-relax',
+  prefix        = 'graphene',
+  outdir        = './tmp',
+  pseudo_dir = '../../pseudopotentzialak/',
+  forc_conv_thr = 1.0d-4,
+  etot_conv_thr = 1.0d-5,
+/
+&SYSTEM
+  ibrav     = 0,
+  nat       = 2,
+  ntyp      = 1,
+  ecutwfc   = 100.0,
+  occupations = 'smearing',
+  smearing    = 'mv',
+  degauss     = 0.02,
+  assume_isolated = '2D',
+  nosym = .true.,
+  noinv = .true.
+/
+&ELECTRONS
+  mixing_beta = 0.7,
+  conv_thr    = 1.0d-16,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+  cell_dofree   = 'xy',
+/
+ATOMIC_SPECIES
+  C  12.0107  C.upf
+
+CELL_PARAMETERS (angstrom)
+   2.4653253740   0.0000000000   0.0000000000
+  -1.2326626870   2.1350344025   0.0000000000
+   0.0000000000   0.0000000000  17.8000000000
+
+ATOMIC_POSITIONS (crystal)
+  C    0.616642722    0.283357278   0.500000
+  C    0.283357278    0.616642722   0.500000
+
+K_POINTS automatic
+  28 28 1   0 0 0

@@ -7,12 +7,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                  '..', '..', '..', '..', 'modules'))
 from svecs_module import get_svecs_multi, print_svecs_summary
 
-# ═════════════════════════════════════════════════════════════════
-#  PARAMETROS DEL MATERIAL
-# ═════════════════════════════════════════════════════════════════
-
-M_C = 12.011   # masa atómica del C (uma)
-N   = 7        # supercelda 7×7×1
+M_C = 12.011
+N   = 7
 
 a1 = np.array([ 1.000000,  0.000000,  0.000000])
 a2 = np.array([-0.500000,  np.sqrt(3)/2,  0.000000])
@@ -22,22 +18,17 @@ b1 = np.array([1.000000,  0.577350, 0.000000])
 b2 = np.array([0.000000,  1.154701, 0.000000])
 b3 = np.array([0.000000,  0.000000, 0.232558])
 
-# 98 átomos en la supercelda 7×7×1, coordenadas primitivas fraccionarias.
-# A en (n1, n2, 0), B en (n1+1/3, n2+2/3, 0)  con n1,n2 ∈ {0,...,6}.
-# Orden: n2 exterior, n1 interior, A antes que B — idéntico a c_sup.scf.in.
-# Se usan fracciones exactas para evitar errores de multiplicidad en svecs.
 sc_positions = []
 for n2 in range(N):
     for n1 in range(N):
-        sc_positions.append([n1,       n2,       0.0])  # A
-        sc_positions.append([n1 + 1/3, n2 + 2/3, 0.0]) # B
+        sc_positions.append([n1,       n2,       0.0])
+        sc_positions.append([n1 + 1/3, n2 + 2/3, 0.0])
 sc_positions = np.array(sc_positions, dtype=float)
 
 n_atoms  = 98
 n_basis  = 2
-n_branch = 6   # 2 átomos × 3 direcciones
+n_branch = 6
 
-# Puntos de alta simetría en coordenadas recíprocas reducidas
 symmetry_points = [
     (r'$\Gamma$', np.array([0.000000,  0.000000,  0.0])),
     (r'$M$',      np.array([0.500000,  0.000000,  0.0])),
@@ -52,10 +43,6 @@ output_dat  = 'Grafenoa_DF_bandak.dat'
 
 factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302 * 33.3564
 
-# ═════════════════════════════════════════════════════════════════
-#  CARGA Y DIAGNOSTICO DE IFC
-# ═════════════════════════════════════════════════════════════════
-
 A = np.vstack([a1, a2, a3])
 B = np.vstack([b1, b2, b3])
 
@@ -69,7 +56,6 @@ print(f"  IFC[3,0]  Phi_BA xx m=0 : {IFC[3,0]:.6f}")
 print(f"  Suma fila 0 (ASR, aprox 0): {np.sum(IFC[0,:]):.2e}")
 print(f"  Suma fila 3 (ASR, aprox 0): {np.sum(IFC[3,:]):.2e}")
 
-# Bloques 3×3 por atomo
 IFC_A = defaultdict(lambda: np.zeros((3, 3), dtype=float))
 IFC_B = defaultdict(lambda: np.zeros((3, 3), dtype=float))
 
@@ -78,10 +64,6 @@ for m in range(n_atoms):
         for nu in range(3):
             IFC_A[m][mu, nu] = IFC[mu,     3*m + nu]
             IFC_B[m][mu, nu] = IFC[3 + mu, 3*m + nu]
-
-# ═════════════════════════════════════════════════════════════════
-#  SVECS Y MULTI
-# ═════════════════════════════════════════════════════════════════
 
 basis_positions = np.array([
     [0.0,    0.0,    0.0],
@@ -94,20 +76,12 @@ print("DIAGNOSTICO SVECS")
 print("=" * 60)
 print_svecs_summary(svecs, multi)
 
-# ═════════════════════════════════════════════════════════════════
-#  Q-PATH
-# ═════════════════════════════════════════════════════════════════
-
 q_path_red  = np.loadtxt(q_path_file)
 QN          = q_path_red.shape[0]
 q_path_cart = q_path_red @ B
 s_path      = np.zeros(QN)
 for i in range(1, QN):
     s_path[i] = s_path[i-1] + linalg.norm(q_path_cart[i] - q_path_cart[i-1])
-
-# ═════════════════════════════════════════════════════════════════
-#  MATRIZ DINAMICA 6×6
-# ═════════════════════════════════════════════════════════════════
 
 def phase_avg(q_red, svecs, multi, k, s):
     m_val, adrs = multi[k, s]
@@ -124,12 +98,12 @@ def dynamical_matrix(q):
         ph_A = phase_avg(q_red, svecs, multi, m, s=0)
         ph_B = phase_avg(q_red, svecs, multi, m, s=1)
 
-        if m % 2 == 0:   # subred A → columnas 0:3
-            D[0:3, 0:3] += IFC_A[m] * ph_A   # D_AA
-            D[3:6, 0:3] += IFC_B[m] * ph_B   # D_BA
-        else:             # subred B → columnas 3:6
-            D[0:3, 3:6] += IFC_A[m] * ph_A   # D_AB
-            D[3:6, 3:6] += IFC_B[m] * ph_B   # D_BB
+        if m % 2 == 0:
+            D[0:3, 0:3] += IFC_A[m] * ph_A
+            D[3:6, 0:3] += IFC_B[m] * ph_B
+        else:
+            D[0:3, 3:6] += IFC_A[m] * ph_A
+            D[3:6, 3:6] += IFC_B[m] * ph_B
 
     D = (D + D.conj().T) / 2.0
     return D / M_C
@@ -139,7 +113,6 @@ def phonon_frequencies(D):
     w2[w2 < 0] = 0.0
     return np.sqrt(w2) * factor
 
-# ── Diagnóstico en Gamma ──────────────────────────────────────────
 print("\n" + "=" * 60)
 print("DIAGNOSTICO EN GAMMA")
 print("=" * 60)
@@ -148,7 +121,6 @@ freqs_gamma = phonon_frequencies(D_gamma)
 print(f"  Frecuencias en Gamma: {np.round(freqs_gamma, 4)} cm-1")
 print(f"  (Esperado: 3 acusticos ~0, ZO ~873, LO/TO ~1559 cm-1)")
 
-# ── Diagnóstico en K ──────────────────────────────────────────────
 print("\n" + "=" * 60)
 print("DIAGNOSTICO EN K")
 print("=" * 60)
@@ -157,19 +129,11 @@ freqs_K = phonon_frequencies(D_K)
 print(f"  Frecuencias en K: {np.round(freqs_K, 4)} cm-1")
 print(f"  (Esperado: pares degenerados [0,0], [~1094,~1094], [~1329,~1329])")
 
-# ═════════════════════════════════════════════════════════════════
-#  CALCULAR BANDAS
-# ═════════════════════════════════════════════════════════════════
-
 omega = np.zeros((QN, n_branch))
 for i in range(QN):
     omega[i] = phonon_frequencies(dynamical_matrix(q_path_red[i]))
 
 bandas = np.column_stack((s_path, omega))
-
-# ═════════════════════════════════════════════════════════════════
-#  GRAFICA
-# ═════════════════════════════════════════════════════════════════
 
 def s_at_q_on_polyline(q_path, s_path, q_target):
     best_s, best_d2 = None, np.inf

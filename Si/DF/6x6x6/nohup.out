@@ -1,0 +1,52 @@
+Lanzando cálculos desplazados (secuencial, NP=12) @ 2026-06-16T13:43:26+02:00
+>>> [JOB 1/12] atom01_x_minus
+[SKIP] atom01_x_minus — ya completado
+    Progreso: 1/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 2/12] atom01_x_plus
+[SKIP] atom01_x_plus — ya completado
+    Progreso: 2/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 3/12] atom01_y_minus
+[SKIP] atom01_y_minus — ya completado
+    Progreso: 3/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 4/12] atom01_y_plus
+[SKIP] atom01_y_plus — ya completado
+    Progreso: 4/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 5/12] atom01_z_minus
+[SKIP] atom01_z_minus — ya completado
+    Progreso: 5/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 6/12] atom01_z_plus
+[SKIP] atom01_z_plus — ya completado
+    Progreso: 6/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 7/12] atom02_x_minus
+[SKIP] atom02_x_minus — ya completado
+    Progreso: 7/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 8/12] atom02_x_plus
+[SKIP] atom02_x_plus — ya completado
+    Progreso: 8/12 — tiempo transcurrido: 00:00:00
+>>> [JOB 9/12] atom02_y_minus
+[PREP] atom02_y_minus (NP=12) @ 2026-06-16T13:43:26+02:00
+[RUN ] atom02_y_minus
+[DONE] atom02_y_minus  (duración: 04:06:14)
+    Progreso: 9/12 — tiempo transcurrido: 04:06:14
+>>> [JOB 10/12] atom02_y_plus
+[PREP] atom02_y_plus (NP=12) @ 2026-06-16T17:49:40+02:00
+[RUN ] atom02_y_plus
+[DONE] atom02_y_plus  (duración: 04:30:21)
+    Progreso: 10/12 — tiempo transcurrido: 08:36:35
+>>> [JOB 11/12] atom02_z_minus
+[PREP] atom02_z_minus (NP=12) @ 2026-06-16T22:20:01+02:00
+[RUN ] atom02_z_minus
+[DONE] atom02_z_minus  (duración: 04:12:42)
+    Progreso: 11/12 — tiempo transcurrido: 12:49:17
+>>> [JOB 12/12] atom02_z_plus
+[PREP] atom02_z_plus (NP=12) @ 2026-06-17T02:32:43+02:00
+[RUN ] atom02_z_plus
+[DONE] atom02_z_plus  (duración: 03:45:44)
+    Progreso: 12/12 — tiempo transcurrido: 16:35:01
+
+Todos los desplazados terminados.
+Inicio:     2026-06-16T13:43:26+02:00
+Fin:        2026-06-17T06:18:27+02:00
+Total:      16:35:01
+Outputs:    out
+Logs:       ./logs

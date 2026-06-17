@@ -12,8 +12,7 @@
   ibrav = 0,
   nat = 64,
   ntyp = 1,
-  ecutwfc = 38,
-  ecutrho = 80,
+  ecutwfc = 50,
   occupations = 'smearing',
   smearing = 'mp'
   degauss = 0.02
@@ -96,4 +95,4 @@ Al  0.750000  0.750000  0.500000
 Al  0.750000  0.750000  0.750000
 
 K_POINTS (automatic)
-3 3 3 1 1 1
+6 6 6 0 0 0

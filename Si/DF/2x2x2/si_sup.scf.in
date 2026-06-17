@@ -9,18 +9,18 @@
   ibrav = 0,
   nat = 16,
   ntyp = 1,
-  ecutwfc = 35,
+  ecutwfc = 50,
 /
 &ELECTRONS
-  conv_thr = 1.0d-16
+  conv_thr = 1.0d-8
 /
 ATOMIC_SPECIES
-  Si 28.086  Si.upf
+  Si 28.086  Si_NC_PBE.upf
 
 CELL_PARAMETERS angstrom
-  -5.393784   0.000000   5.393784
-   0.000000   5.393784   5.393784
-  -5.393784   5.393784   0.000000
+   -5.431000    0.000000    5.431000
+    0.000000    5.431000    5.431000
+   -5.431000    5.431000    0.000000
 
 ATOMIC_POSITIONS crystal
   Si  0.000000  0.000000  0.000000
@@ -42,3 +42,4 @@ ATOMIC_POSITIONS crystal
 
 K_POINTS automatic
   6 6 6 0 0 0
+

@@ -1,5 +1,5 @@
 
-     Program Q2R v.7.4 starts on 26Apr2026 at 21:37:36 
+     Program Q2R v.7.4 starts on 14Jun2026 at 10:14:58 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,30 +14,30 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =      12
-     124372 MiB available memory on the printing compute node when the environment starts
+     5984 MiB available memory on the printing compute node when the environment starts
  
 
   reading grid info from file si.dyn0    
 
   reading force constants from file si.dyn1
  macroscopic fields = T
-  13.34771   0.00000   0.00000
-   0.00000  13.34771   0.00000
-   0.00000   0.00000  13.34771
+  13.08648   0.00000   0.00000
+   0.00000  13.08648   0.00000
+   0.00000   0.00000  13.08648
   na=            1
-  -0.00857   0.00000   0.00000
-   0.00000  -0.00857   0.00000
-   0.00000   0.00000  -0.00857
+  -0.00692   0.00000   0.00000
+   0.00000  -0.00692   0.00000
+   0.00000   0.00000  -0.00692
   na=            2
-  -0.00857   0.00000   0.00000
-   0.00000  -0.00857   0.00000
-   0.00000   0.00000  -0.00857
-  Norm of the difference between old and new effective charges:    0.02098654828968203601
-  alpha Ewald:    1.31581582081108     
+  -0.00692   0.00000   0.00000
+   0.00000  -0.00692   0.00000
+   0.00000   0.00000  -0.00692
+  Norm of the difference between old and new effective charges:    0.01696227008111124770
+  alpha Ewald:    1.33403616556697     
   nqs=            1
  q=   0.00000000  0.00000000  0.00000000
   reading force constants from file si.dyn2
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=            8
  q=  -0.17677670  0.17677670 -0.17677670
  q=   0.17677670 -0.17677670 -0.17677670
@@ -48,14 +48,14 @@
  q=  -0.17677670  0.17677670  0.17677670
  q=   0.17677670  0.17677670 -0.17677670
   reading force constants from file si.dyn3
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=            4
  q=   0.35355339 -0.35355339  0.35355339
  q=   0.35355339  0.35355339  0.35355339
  q=  -0.35355339  0.35355339  0.35355339
  q=   0.35355339  0.35355339 -0.35355339
   reading force constants from file si.dyn4
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=            6
  q=   0.00000000  0.35355339  0.00000000
  q=   0.00000000 -0.35355339  0.00000000
@@ -64,7 +64,7 @@
  q=   0.00000000  0.00000000 -0.35355339
  q=  -0.35355339  0.00000000  0.00000000
   reading force constants from file si.dyn5
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=           24
  q=   0.53033009 -0.17677670  0.53033009
  q=   0.53033009 -0.17677670 -0.53033009
@@ -91,7 +91,7 @@
  q=   0.17677670 -0.53033009 -0.53033009
  q=   0.53033009 -0.53033009 -0.17677670
   reading force constants from file si.dyn6
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=           12
  q=   0.35355339  0.00000000  0.35355339
  q=  -0.35355339  0.00000000  0.35355339
@@ -106,13 +106,13 @@
  q=  -0.35355339 -0.35355339  0.00000000
  q=   0.00000000 -0.35355339  0.35355339
   reading force constants from file si.dyn7
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=            3
  q=   0.00000000 -0.70710678  0.00000000
  q=  -0.70710678  0.00000000  0.00000000
  q=   0.00000000  0.00000000 -0.70710678
   reading force constants from file si.dyn8
-  alpha Ewald:    1.31581582081108     
+  alpha Ewald:    1.33403616556697     
   nqs=            6
  q=  -0.35355339 -0.70710678  0.00000000
  q=   0.00000000  0.70710678  0.35355339
@@ -125,10 +125,10 @@
 
       fft-check success (sum of imaginary terms < 10^-12)
  
-     Q2R          :      0.01s CPU      0.01s WALL
+     Q2R          :      0.03s CPU      0.04s WALL
 
  
-   This run was terminated on:  21:37:36  26Apr2026            
+   This run was terminated on:  10:14:58  14Jun2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

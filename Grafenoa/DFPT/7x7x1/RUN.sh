@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # =============================================================================
 # RUN.sh — Dispersión de fonones del grafeno
-# pw.x → ph.x → q2r.x → matdyn.x → bandak_cm.py
+# pw.x → ph.x → q2r.x → matdyn.x → bandak.py
 # =============================================================================
 
 set -euo pipefail
@@ -133,16 +133,16 @@ if [ -f graphene.freq ]; then
 fi
 
 # ===========================================================================
-# PASO 5: Plot (bandak_cm.py)
+# PASO 5: Plot (bandak.py)
 # ===========================================================================
-step_start 5 "Generando figura (bandak_cm.py)"
-python3 bandak_cm.py \
+step_start 5 "Generando figura (bandak.py)"
+python3 bandak.py \
     c.matdyn.out c.ph.out c.q2r.out c.scf.out \
     graphene_bandak_cm.dat \
     graphene.dyn0 graphene.dyn2 graphene.dyn4 \
     graphene.freq matdyn.modes path.dat \
     > bandak_cm.log 2>&1
-step_end 5 "bandak_cm.py" bandak_cm.log
+step_end 5 "bandak.py" bandak_cm.log
 
 if [ -f graphene_bandak.pdf ]; then
     echo -e "  ${GREEN}${BOLD}✓ Figura generada: graphene_bandak.pdf${NC}"

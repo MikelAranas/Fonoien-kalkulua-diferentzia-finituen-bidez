@@ -1,5 +1,5 @@
 
-     Program MATDYN v.7.4 starts on  1Apr2026 at 12:24:50 
+     Program MATDYN v.7.4 starts on 15Jun2026 at 23: 6: 9 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,7 +14,7 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =      12
-     13761 MiB available memory on the printing compute node when the environment starts
+     95548 MiB available memory on the printing compute node when the environment starts
  
  mass for atomic type   1 not given; uses mass from file al.fc                                                                                                                                                                                                                                                           
      Message from routine matdyn:
@@ -22,10 +22,10 @@
      Message from routine matdyn:
      Z* not found in file al.fc, TO-LO splitting at q=0 will be absent!
  
-     MATDYN       :      0.01s CPU      0.02s WALL
+     MATDYN       :      0.01s CPU      0.01s WALL
 
  
-   This run was terminated on:  12:24:50   1Apr2026            
+   This run was terminated on:  23: 6: 9  15Jun2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

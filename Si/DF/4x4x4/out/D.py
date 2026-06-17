@@ -7,10 +7,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                  '..', '..', '..', '..', 'modules'))
 from svecs_module import get_svecs_multi
 
-# ═══════════════════════════════════════════════════════════════
-#  PARAMETROS
-# ═══════════════════════════════════════════════════════════════
-
 M_Si    = 28.086
 N_BASIS = 2
 N       = 4
@@ -20,19 +16,17 @@ PATH_FILE = 'path.dat'
 OUTPUT_PDF = 'Si_DF_bandak.pdf'
 OUTPUT_DAT = 'Si_DF_bandak.dat'
 
-# Vectores primitivos FCC
 a1 = np.array([-0.707107,  0.000000,  0.707107])
 a2 = np.array([ 0.000000,  0.707107,  0.707107])
 a3 = np.array([-0.707107,  0.707107,  0.000000])
 A_PRIM = np.vstack([a1, a2, a3])
 
-# Vectores reciprocos
 b1 = np.array([-0.707107, -0.707107,  0.707107])
 b2 = np.array([ 0.707107,  0.707107,  0.707107])
 b3 = np.array([-0.707107,  0.707107, -0.707107])
 B = np.vstack([b1, b2, b3])
 
-factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302 #* 33.3564
+factor = np.sqrt(13.605693 / 0.529177**2) * 15.633302
 
 symmetry_points = [
     (r'$\Gamma$',   np.array([0.0,   0.0,  0.0 ])),
@@ -41,12 +35,6 @@ symmetry_points = [
     (r'$\Gamma*$',   np.array([0.0,   1.0,  0.0 ])),
     (r'$L$',   np.array([0.0,   1.5, 0.0])),
 ]
-
-
-
-# ═══════════════════════════════════════════════════════════════
-#  POSICIONES EN COORDENADAS PRIMITIVAS (4x4x4, 128 atomos)
-# ═══════════════════════════════════════════════════════════════
 
 sc_positions = np.array([
     [0.0000, 0.0000, 0.0000],
@@ -182,19 +170,11 @@ sc_positions = np.array([
 nat = len(sc_positions)
 print(f"N={N}, nat={nat}")
 
-# ═══════════════════════════════════════════════════════════════
-#  SVECS Y MULTI
-# ═══════════════════════════════════════════════════════════════
-
 basis_positions = np.array([
-    [0.00, 0.00, 0.00],   # Si_A
-    [0.25, 0.25, 0.25],   # Si_B
+    [0.00, 0.00, 0.00],
+    [0.25, 0.25, 0.25],
 ])
 svecs, multi = get_svecs_multi(A_PRIM, sc_positions, N, basis_positions=basis_positions)
-
-# ═══════════════════════════════════════════════════════════════
-#  CARGA DE IFC
-# ═══════════════════════════════════════════════════════════════
 
 IFC = np.loadtxt(IFC_FILE)
 print(f"IFC shape: {IFC.shape}  (esperado: ({3*N_BASIS}, {3*nat}))")
@@ -205,20 +185,12 @@ for alpha in range(N_BASIS):
     for m in range(nat):
         IFC_blocks[alpha][m] = IFC[3*alpha:3*alpha+3, 3*m:3*m+3]
 
-# ═══════════════════════════════════════════════════════════════
-#  Q-PATH
-# ═══════════════════════════════════════════════════════════════
-
 q_path = np.loadtxt(PATH_FILE, skiprows=0, usecols=(0,1,2))
 QN = q_path.shape[0]
 q_cart = q_path @ B
 s_path = np.zeros(QN)
 for i in range(1, QN):
     s_path[i] = s_path[i-1] + linalg.norm(q_cart[i] - q_cart[i-1])
-
-# ═══════════════════════════════════════════════════════════════
-#  MATRIZ DINAMICA
-# ═══════════════════════════════════════════════════════════════
 
 def dynamical_matrix(q_red):
     D = np.zeros((3*N_BASIS, 3*N_BASIS), dtype=complex)
@@ -239,7 +211,6 @@ def phonon_frequencies(D):
     w2[w2 < 0] = 0.0
     return np.sqrt(w2) * factor
 
-# Diagnostico en Gamma
 print("\nFrecuencias en Gamma:")
 freqs_G = phonon_frequencies(dynamical_matrix(np.array([0.0, 0.0, 0.0])))
 print(f"  {np.round(freqs_G, 2)} cm-1")
@@ -250,9 +221,6 @@ print("=" * 60)
 D_X = dynamical_matrix(np.array([0.5, 0.5, 0.0]))
 freqs_X = phonon_frequencies(D_X)
 print(f"  Frecuencias en X (cm⁻¹): {np.round(freqs_X, 3)}")
-# ═══════════════════════════════════════════════════════════════
-#  CALCULO DE BANDAS
-# ═══════════════════════════════════════════════════════════════
 
 n_branch = 3 * N_BASIS
 omega = np.zeros((QN, n_branch))
@@ -260,10 +228,6 @@ for i in range(QN):
     omega[i] = phonon_frequencies(dynamical_matrix(q_path[i]))
 
 print(f"Frecuencia maxima: {omega.max():.2f} cm-1")
-
-# ═══════════════════════════════════════════════════════════════
-#  GRAFICA
-# ═══════════════════════════════════════════════════════════════
 
 def s_at_q(q_path, s_path, q_target):
     best_s, best_d2 = None, np.inf

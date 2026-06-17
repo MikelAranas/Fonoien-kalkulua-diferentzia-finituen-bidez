@@ -10,14 +10,14 @@
   ibrav = 0
   nat = 216
   ntyp = 1
-  ecutwfc = 38
-  ecutrho = 80
+  ecutwfc = 50
   occupations = 'smearing'
   smearing = 'mp'
   degauss = 0.02
 /
 &ELECTRONS
   conv_thr = 1.0d-16
+  electron_maxstep = 200
 /
 ATOMIC_SPECIES
 Al 26.9815 Al.upf
@@ -246,4 +246,4 @@ Al  0.833333  0.833333  0.666667
 Al  0.833333  0.833333  0.833333
 
 K_POINTS automatic
-2 2 2 1 1 1
+4 4 4 0 0 0

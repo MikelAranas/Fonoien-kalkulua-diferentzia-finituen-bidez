@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+NP=48
+start=$(date +%s)
+
+mpirun -np $NP pw.x -in si_sup.scf.in > si_sup.scf.out
+python crearinputs.py
+bash ej.sh
+(cd out && python IFC_murriztue.py)
+(cd out && python D.py)
+
+end=$(date +%s)
+echo "Tiempo total: $((end-start)) s"

@@ -1,0 +1,15 @@
+============================================================
+  GRAFENOA - AZTERKETAREN ZENBAKIAK
+============================================================
+
+1. KOSTU KONPUTAZIONALA
+   (DF: 12 SCF desplazatu)
+   tamaina  q_irr  t_DFPT(s)      t_DF(s)  faktorea
+   2x2x1        2       86.8        738.4      8.5x
+   4x4x1        4      364.9       5758.4     15.8x
+   7x7x1        8     1822.6      45110.3     24.8x
+
+2. DF vs DFPT ADOSTASUNA TAMAINA BEREAN (batez besteko |dw|)
+   2x2x1: <|dw|> = 1.1563, max = 5.7281 cm$^{-1}$
+   4x4x1: <|dw|> = 1.3641, max = 5.6669 cm$^{-1}$
+   7x7x1: <|dw|> = 1.5465, max = 6.3215 cm$^{-1}$

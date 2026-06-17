@@ -12,8 +12,7 @@ tstress = .true.
 ibrav = 0,
 nat = 8,
 ntyp = 1,
-ecutwfc = 38,
-ecutrho = 80
+ecutwfc = 50,
 occupations = 'smearing',
 smearing = 'mp'
 degauss = 0.02
@@ -30,7 +29,6 @@ CELL_PARAMETERS angstrom
   0.0000  4.0378  4.0378   
   -4.0378  4.0378  0.0000
 
-
 ATOMIC_POSITIONS angstrom
 Al -0.010000 0.000000 0.000000
 Al -2.018900 0.000000 2.018900
@@ -42,5 +40,5 @@ Al -2.018900 4.037800 2.018900
 Al -4.037800 4.037800 4.037800
 
 K_POINTS (automatic)
-6 6 6 1 1 1
+12 12 12 0 0 0
 

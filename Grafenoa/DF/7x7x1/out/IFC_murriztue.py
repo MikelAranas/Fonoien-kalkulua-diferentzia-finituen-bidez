@@ -36,7 +36,7 @@ for i in range(2):
 DELTA_ang = 0.01
 DELTA = DELTA_ang / 0.529177
 
-Phi = np.zeros((6, 3 * nat))  # shape (6, 294)
+Phi = np.zeros((6, 3 * nat))
 
 for i in range(2):
     for mu in range(3):
